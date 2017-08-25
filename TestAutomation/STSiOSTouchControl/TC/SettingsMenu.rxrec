@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="f21e5d0c-22d5-48ae-a5b9-715ad41caf0e"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		SettingsMenu
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SettingsMenu"
+	namespace="STSiOSTouchControl.TC"/>
+	<variables/>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Open application and Press Settings/Menu button .
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSiOSTouchControl"
+		classname="CommonHelper"
+		methodname="TapOnSettings"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="230f7349-8592-4c4a-8f8e-221f51139fd8"/>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Settings screen is opened and following controls are displayed:Back button, Sound Balance, Sound Settings, Setup, Advanced Setup, Language, Rate our App, Usage statistics, Help, Imprint, App Version
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSiOSTouchControl"
+		classname="CommonHelper"
+		methodname="ValidateContents"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="51551a4b-e7bd-4e85-9f45-b9740a1d1e2d">
+				<argument
+				argname="contents"
+				id="a0d0c0d7-8daf-4551-b5d3-d2506c11320c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Broadcast level;Setup;Advanced Setup;Language;Rate our app;Usage Statistics;Help;Imprint;App Version
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="STSiOSTouchControlRepository"
+	id="3b7ccdb2-a3af-418f-8385-46ea623c2d1d"
+	rxversion="6.2"
+	relativepath="..\STSiOSTouchControlRepository.rxrep">
+		<codegen
+		classname="STSiOSTouchControlRepository"
+		namespace="STSiOSTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="20d2592f-8ce7-455f-aa9d-0da08624a655"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SettingsMenu.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

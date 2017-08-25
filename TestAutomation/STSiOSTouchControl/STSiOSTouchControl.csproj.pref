@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="STSiOSTouchControl.CommonHelper.ValidateMuteUnmute(Boolean muteUnmute)" />
+      <Element value="STSiOSTouchControl.CommonHelper.TapOnProgram()" />
+      <Element value="STSiOSTouchControl.CommonHelper.ValidateContents(String contents)" />
+      <Element value="STSiOSTouchControl.CommonHelper.ValidateMuteUnmute(String muteUnmute)" />
+      <Element value="STSiOSTouchControl.CommonHelper.TapOnMuteUnmute()" />
+      <Element value="STSiOSTouchControl.CommonHelper.ValidateTinnitusVolumeIncrease()" />
+    </Array>
+  </Properties>
+</Properties>

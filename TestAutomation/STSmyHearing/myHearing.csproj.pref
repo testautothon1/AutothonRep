@@ -1,0 +1,26 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="myHearing.rxtst" />
+  </Array>
+  <Array name="bookmarks">
+    <Element value="Breakpoint|C:\New folder\myHearing\myHearing\Recording1.UserCode.cs|71|4|True|Break||" />
+  </Array>
+  <Array name="files">
+    <Element value="myHearing.rxtst" />
+    <Element value="Recording1.rxrec" />
+    <Element value="Recording1.UserCode.cs" />
+    <Element value="myHearingRepository.rxrep" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="myHearing.Recording1.Logout()" />
+      <Element value="myHearing.Recording1.ReadConnectionCode()" />
+      <Element value="myHearing.Recording1.ClickOnConnectToMyHearing()" />
+      <Element value="myHearing.Recording1.SelectHCP(String hcp)" />
+      <Element value="myHearing.Recording1.Login(String userName, String password)" />
+    </Array>
+  </Properties>
+</Properties>

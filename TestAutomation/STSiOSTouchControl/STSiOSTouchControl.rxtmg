@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="STSiOSTouchControl"
+      id="fe8ceba9-05c6-4580-8efc-1143767217ab"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="STSiOSTouchControl"
+      id="fe8ceba9-05c6-4580-8efc-1143767217ab"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

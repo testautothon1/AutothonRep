@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="STSAndBasic.CommonHelper.StartApp()" />
+      <Element value="STSAndBasic.CommonHelper.CloseApp()" />
+      <Element value="STSAndBasic.CommonHelper.TapOn(String objectName)" />
+      <Element value="STSAndBasic.CommonHelper.BackAction()" />
+      <Element value="STSAndBasic.CommonHelper.ClickOnAlertMessage(String option)" />
+      <Element value="STSAndBasic.CommonHelper.LogSnapshot()" />
+    </Array>
+  </Properties>
+</Properties>

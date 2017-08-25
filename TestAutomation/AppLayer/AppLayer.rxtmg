@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="AppLayer"
+      id="b9a07afe-6b44-4f05-851d-ad651ac7af28"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="AppLayer"
+      id="b9a07afe-6b44-4f05-851d-ad651ac7af28"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>STSmyHearing</RootNamespace>
+    <AssemblyName>STSmyHearing</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>5ec09a61-fd30-4923-a56e-7ea31a486eb4</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver">
+      <HintPath>..\External\Appium\appium-dotnet-driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\External\Appium\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External\Appium\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\External\Appium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\External\Appium\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidSetup.cs">
+      <id>a82708a5-5456-408d-8185-99625615ab04</id>
+    </Compile>
+    <Compile Include="AppVariables.cs">
+      <id>5a1c8b2a-5856-4e40-8a0e-e2749ddd4e57</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>02fd0806-25cb-4c65-a796-e09981241690</id>
+    </Compile>
+    <Compile Include="CommonHelper.cs">
+      <id>90c5f808-a181-4d04-9cd4-a8d27effb977</id>
+    </Compile>
+    <Compile Include="STSmyHearingRepository.cs">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <DependentUpon>STSmyHearingRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>192de9b4-bc4f-4c8f-bc3f-6b62d1adf037</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>761e7916-e1c7-4c64-b4c3-df8bd1eb17f6</id>
+    </Compile>
+    <Compile Include="AndroidSuiteSetUp.cs">
+      <id>77309930-3fd2-4766-8cd1-0571542253dd</id>
+    </Compile>
+    <Compile Include="TC\ConsentStatement.cs">
+      <BoundTo>6e9b8b9c-3584-4558-bef9-5cfc14f7cab1</BoundTo>
+      <DependentUpon>ConsentStatement.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a99cb816-d8ce-4794-a998-0d353359bcd7</id>
+    </Compile>
+    <Compile Include="TC\ConsentStatement.UserCode.cs">
+      <BoundTo>6e9b8b9c-3584-4558-bef9-5cfc14f7cab1</BoundTo>
+      <DependentUpon>ConsentStatement.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a00ef7f2-e76d-4dae-bf64-80318d868e13</id>
+    </Compile>
+    <Compile Include="TC\HCPAddress.cs">
+      <BoundTo>962505b4-d36d-43d3-8ce4-ed408992e511</BoundTo>
+      <DependentUpon>HCPAddress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d40456b-d6d5-41a1-a991-5365d7a209db</id>
+    </Compile>
+    <Compile Include="TC\HCPAddress.UserCode.cs">
+      <BoundTo>962505b4-d36d-43d3-8ce4-ed408992e511</BoundTo>
+      <DependentUpon>HCPAddress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c0c6c555-3550-4234-9a9f-6b3cb9447de8</id>
+    </Compile>
+    <Compile Include="TC\HCPName.cs">
+      <BoundTo>42e6043e-62a6-403a-98a9-ddf26a9e3613</BoundTo>
+      <DependentUpon>HCPName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8b1883b-6a05-4794-abbb-b6edd7b69920</id>
+    </Compile>
+    <Compile Include="TC\HCPName.UserCode.cs">
+      <BoundTo>42e6043e-62a6-403a-98a9-ddf26a9e3613</BoundTo>
+      <DependentUpon>HCPName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1e194ee0-cdad-4be4-b6e0-70c835b7f52b</id>
+    </Compile>
+    <Compile Include="TC\HCPOpeningHours.cs">
+      <BoundTo>44aa7b10-8b88-477c-b2ea-748222b4a795</BoundTo>
+      <DependentUpon>HCPOpeningHours.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ce72afe-98ae-43ea-8018-4d146fbfec68</id>
+    </Compile>
+    <Compile Include="TC\HCPOpeningHours.UserCode.cs">
+      <BoundTo>44aa7b10-8b88-477c-b2ea-748222b4a795</BoundTo>
+      <DependentUpon>HCPOpeningHours.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28c40a58-9d60-446d-ba72-dd041ebfb0de</id>
+    </Compile>
+    <Compile Include="TC\NonRiskRelatedInfo.cs">
+      <BoundTo>66be8e1b-2560-431f-860b-789ba2521b3f</BoundTo>
+      <DependentUpon>NonRiskRelatedInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7894b890-3028-4bb6-9a07-029d1e865bc6</id>
+    </Compile>
+    <Compile Include="TC\NonRiskRelatedInfo.UserCode.cs">
+      <BoundTo>66be8e1b-2560-431f-860b-789ba2521b3f</BoundTo>
+      <DependentUpon>NonRiskRelatedInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47882760-0076-4a4d-97ac-4d6c78b43fe6</id>
+    </Compile>
+    <Compile Include="TC\POC1.cs">
+      <BoundTo>fa9cfdd5-946e-4019-bbac-aad775f4ec0f</BoundTo>
+      <DependentUpon>POC1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b83699f-4e17-4137-99cf-6025b9eb4319</id>
+    </Compile>
+    <Compile Include="TC\POC1.UserCode.cs">
+      <BoundTo>fa9cfdd5-946e-4019-bbac-aad775f4ec0f</BoundTo>
+      <DependentUpon>POC1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e381798f-1afa-433e-aa04-7c43034820b3</id>
+    </Compile>
+    <Compile Include="TC\LegalTexts.cs">
+      <BoundTo>aead71f5-8288-4f1d-9c54-bc8ddaddd2f1</BoundTo>
+      <DependentUpon>LegalTexts.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d10b6a09-f7f4-4bfe-96f6-4b62a88fe0df</id>
+    </Compile>
+    <Compile Include="TC\LegalTexts.UserCode.cs">
+      <BoundTo>aead71f5-8288-4f1d-9c54-bc8ddaddd2f1</BoundTo>
+      <DependentUpon>LegalTexts.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>deb3e12d-744a-4440-926b-743965c7ff67</id>
+    </Compile>
+    <Compile Include="TC\RiskRelatedInfo.cs">
+      <BoundTo>ba889b81-ef59-4e9f-a81a-b881218397ff</BoundTo>
+      <DependentUpon>RiskRelatedInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>52259c40-0374-4b9f-9e06-de544175ba07</id>
+    </Compile>
+    <Compile Include="TC\RiskRelatedInfo.UserCode.cs">
+      <BoundTo>ba889b81-ef59-4e9f-a81a-b881218397ff</BoundTo>
+      <DependentUpon>RiskRelatedInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>076106de-a716-4d44-a86d-0ba3d5005701</id>
+    </Compile>
+    <Compile Include="WebPart\WebHelper.cs">
+      <id>905f6d4c-67de-4628-9a02-6a2a1a8022fb</id>
+    </Compile>
+    <Compile Include="WebPart\ConnectionCode.cs">
+      <DependentUpon>ConnectionCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7e1e948-a785-4219-811c-7a2a51ec5c20</id>
+      <BoundTo>8616308c-3fdc-4858-9180-9d0ee71b1a17</BoundTo>
+    </Compile>
+    <Compile Include="WebPart\ConnectionCode.UserCode.cs">
+      <DependentUpon>ConnectionCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>15b74f76-fa10-4d6d-957c-6ea3c035580c</id>
+      <BoundTo>8616308c-3fdc-4858-9180-9d0ee71b1a17</BoundTo>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>3b83edc4-ae63-49c2-828d-a169437a2d70</id>
+    </None>
+    <None Include="STSmyHearingRepository.rximg">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <DependentUpon>STSmyHearingRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>765eb9b6-e2fc-475b-9af8-3908250783c7</id>
+    </None>
+    <None Include="STSmyHearingRepository.rxrep">
+      <id>5ec09a61-fd30-4923-a56e-7ea31a486eb4</id>
+      <repoid>1002db60-a7b0-4936-9411-739158d850bf</repoid>
+      <reporootid>a2821f0b-a64c-47ff-820f-d5ec8b6c113b</reporootid>
+    </None>
+    <None Include="TC\ConsentStatement.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>6e9b8b9c-3584-4558-bef9-5cfc14f7cab1</id>
+      <recordtableid>b65c2669-3cc3-4a6f-861b-a5336c24a96e</recordtableid>
+    </None>
+    <None Include="TC\HCPAddress.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>962505b4-d36d-43d3-8ce4-ed408992e511</id>
+      <recordtableid>0fed57d8-8bc3-47d9-9bad-dc41af23ef2d</recordtableid>
+    </None>
+    <None Include="TC\HCPName.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>42e6043e-62a6-403a-98a9-ddf26a9e3613</id>
+      <recordtableid>3692b1fc-a743-4b9d-994b-f9da570e550e</recordtableid>
+    </None>
+    <None Include="TC\HCPOpeningHours.rxrec">
+      <id>44aa7b10-8b88-477c-b2ea-748222b4a795</id>
+      <recordtableid>b53f87f4-31d2-4890-8ece-62dc56641e64</recordtableid>
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+    </None>
+    <None Include="TC\NonRiskRelatedInfo.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>66be8e1b-2560-431f-860b-789ba2521b3f</id>
+      <recordtableid>ed7abb22-c19d-4716-9be2-ba5a1fa70d12</recordtableid>
+    </None>
+    <None Include="TC\POC1.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>fa9cfdd5-946e-4019-bbac-aad775f4ec0f</id>
+      <recordtableid>75fd3119-a461-4895-b472-fa33e10ad1a8</recordtableid>
+    </None>
+    <None Include="TC\LegalTexts.rxrec">
+      <id>aead71f5-8288-4f1d-9c54-bc8ddaddd2f1</id>
+      <recordtableid>37290307-843d-4f9b-8cb9-9e0925d85127</recordtableid>
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+    </None>
+    <None Include="TC\RiskRelatedInfo.rxrec">
+      <id>ba889b81-ef59-4e9f-a81a-b881218397ff</id>
+      <recordtableid>9359b0ee-b628-4584-85b1-63e5fcfa1125</recordtableid>
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+    </None>
+    <None Include="WebPart\ConnectionCode.rxrec">
+      <BoundTo>5ec09a61-fd30-4923-a56e-7ea31a486eb4</BoundTo>
+      <id>8616308c-3fdc-4858-9180-9d0ee71b1a17</id>
+      <recordtableid>9b56909c-a6ca-42a5-908d-e3882611b57a</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STSmyHearing.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7ed259f1-2669-453f-bbea-ab4ca7907c93</id>
+    </Content>
+    <Content Include="STSmyHearing.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>efd62cc2-8814-4645-8704-216fea50ed62</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebPart">
+      <id>ae1b150b-3dac-46b9-ab6c-71d9d7cf3a59</id>
+    </Folder>
+    <Folder Include="TC">
+      <id>e4f48fa2-0ee3-4e93-8eec-acb25f99a5d3</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLayer\AppLayer.csproj">
+      <Project>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</Project>
+      <Name>AppLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

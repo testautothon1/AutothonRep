@@ -1,0 +1,38 @@
+C:\Framework\TestAutomation\Logger\bin\Debug\AppLayer.rxtmg
+C:\Framework\TestAutomation\Logger\bin\Debug\AppiumService\KeywordImplementation.cs
+C:\Framework\TestAutomation\Logger\bin\Debug\Logger.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\Logger.pdb
+C:\Framework\TestAutomation\Logger\bin\Debug\appium-dotnet-driver.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\AppLayer.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\Castle.Core.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\WebDriver.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\WebDriver.Support.dll
+C:\Framework\TestAutomation\Logger\bin\Debug\AppLayer.pdb
+C:\Framework\TestAutomation\Logger\bin\Debug\appium-dotnet-driver.xml
+C:\Framework\TestAutomation\Logger\bin\Debug\Castle.Core.xml
+C:\Framework\TestAutomation\Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Framework\TestAutomation\Logger\bin\Debug\WebDriver.xml
+C:\Framework\TestAutomation\Logger\bin\Debug\WebDriver.Support.xml
+C:\Framework\TestAutomation\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+C:\Framework\TestAutomation\Logger\obj\Debug\Logger.dll
+C:\Framework\TestAutomation\Logger\obj\Debug\Logger.pdb
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\AppLayer.rxtmg
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\AppiumService\KeywordImplementation.cs
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Logger.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Logger.pdb
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\appium-dotnet-driver.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\AppLayer.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Castle.Core.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\WebDriver.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\WebDriver.Support.dll
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\AppLayer.pdb
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\appium-dotnet-driver.xml
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Castle.Core.xml
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\Newtonsoft.Json.xml
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\WebDriver.xml
+C:\New folder\trunk\TestAutomation\Logger\bin\Debug\WebDriver.Support.xml
+C:\New folder\trunk\TestAutomation\Logger\obj\Debug\Logger.csprojResolveAssemblyReference.cache
+C:\New folder\trunk\TestAutomation\Logger\obj\Debug\Logger.dll
+C:\New folder\trunk\TestAutomation\Logger\obj\Debug\Logger.pdb

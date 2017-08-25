@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="1667cc5f-9636-4f80-804d-91f6bdcd8827"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		ApplicationVersionNumber
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ApplicationVersionNumber"
+	namespace="STSAndTouchControl.TC"/>
+	<variables/>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Open settings.
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndTouchControl"
+		classname="CommonHelper"
+		methodname="TapOnSettings"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="57113ab2-0a6a-4214-a7b0-9a023854253a"/>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Settings screen is opened and application version information is displayed.App version is displayed in the format x.x.x.x
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndTouchControl"
+		classname="CommonHelper"
+		methodname="ValidateAppVersion"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="ca3d6916-e323-40cd-9c28-a740e2d49042"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="STSAndTouchControlRepository"
+	id="ca01960c-087d-4afd-a855-4905ff512d8f"
+	rxversion="6.2"
+	relativepath="..\STSAndTouchControlRepository.rxrep">
+		<codegen
+		classname="STSAndTouchControlRepository"
+		namespace="STSAndTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="5cc381e5-290e-438d-8676-262e4a1c6728"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ApplicationVersionNumber.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

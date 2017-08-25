@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="STSAndTouchControl.CommonHelper.StartApp()" />
+      <Element value="STSAndTouchControl.CommonHelper.CloseApp()" />
+      <Element value="STSAndTouchControl.CommonHelper.BackAction()" />
+      <Element value="STSAndTouchControl.CommonHelper.ValidateContents(String contents)" />
+      <Element value="STSAndTouchControl.CommonHelper.TapOn(String objectName)" />
+      <Element value="STSAndTouchControl.CommonHelper.TapOnSettings()" />
+    </Array>
+  </Properties>
+</Properties>

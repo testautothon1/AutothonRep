@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="dad3f571-37c5-4687-8af1-533285d7405d"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		SettingsMenu
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SettingsMenu"
+	namespace="STSAndTouchControl.TC"/>
+	<variables/>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Open application and Press Settings/Menu button .
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndTouchControl"
+		classname="CommonHelper"
+		methodname="TapOnSettings"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="230f7349-8592-4c4a-8f8e-221f51139fd8"/>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Settings screen is opened and following controls are displayed:Back button, Sound Balance, Sound Settings, Setup, Advanced Setup, Language, Rate our App, Usage statistics, Help, Imprint, App Version
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndTouchControl"
+		classname="CommonHelper"
+		methodname="ValidateContents"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="51551a4b-e7bd-4e85-9f45-b9740a1d1e2d">
+				<argument
+				argname="contents"
+				id="a0d0c0d7-8daf-4551-b5d3-d2506c11320c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Broadcast level;Setup;Advanced Setup;Language;Rate our app;Usage Statistics;Help;Imprint;App Version
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="STSAndTouchControlRepository"
+	id="ca01960c-087d-4afd-a855-4905ff512d8f"
+	rxversion="6.2"
+	relativepath="..\STSAndTouchControlRepository.rxrep">
+		<codegen
+		classname="STSAndTouchControlRepository"
+		namespace="STSAndTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="5cc381e5-290e-438d-8676-262e4a1c6728"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SettingsMenu.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

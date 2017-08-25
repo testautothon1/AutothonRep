@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="bcf472be-662f-488a-b25f-304b36ca5f61"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		AppInfoSupportMail
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="AppInfoSupportMail"
+	namespace="STSAndBasic.TC"/>
+	<variables/>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Open the app, tap on the info icon
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndBasic"
+		classname="CommonHelper"
+		methodname="ClickInfoButton"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="a098f5ff-8562-466a-81a8-b389ce7b4140"/>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Info menu opens up
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndBasic"
+		classname="CommonHelper"
+		methodname="VerifyActionBarTitle"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="bab967dc-8e03-488d-af95-96efdc585483">
+				<argument
+				argname="title"
+				id="fbafa403-0459-4890-aaba-b6325c0e3bf3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Info
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Check the app version number displayed
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Application version information is displayed and it's same as installed version number.(Android 1.x.x.xx)
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="STSAndBasic"
+		classname="CommonHelper"
+		methodname="ValidateAppVersion"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="5c709db1-f316-4dff-af38-9632fa211951"/>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Step## Click 3 times on app version
+			</comment>
+			<bindings/>
+		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Validation## Contact us mail will be prefilled with device name, transmission curve.
+			</comment>
+			<bindings/>
+		</separatoritem>
+	</recorditems>
+	<repository
+	name="STSAndBasicRepository"
+	id="2eea9c9d-b236-4284-ada4-debc9c7a2f08"
+	rxversion="6.2"
+	relativepath="..\STSAndBasicRepository.rxrep">
+		<codegen
+		classname="STSAndBasicRepository"
+		namespace="STSAndBasic"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="be2fa462-7d5d-4acb-97d9-44e086031045"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		AppInfoSupportMail.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

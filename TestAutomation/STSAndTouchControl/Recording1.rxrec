@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="c04fa1e1-0dc1-4e28-98c1-424f34d1189b"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="STSAndTouchControl"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="STSAndTouchControlRepository"
+	id="ca01960c-087d-4afd-a855-4905ff512d8f"
+	rxversion="6.2"
+	relativepath="STSAndTouchControlRepository.rxrep">
+		<codegen
+		classname="STSAndTouchControlRepository"
+		namespace="STSAndTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="5cc381e5-290e-438d-8676-262e4a1c6728"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>
