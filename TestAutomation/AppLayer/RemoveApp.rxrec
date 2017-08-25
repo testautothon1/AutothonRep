@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="e06588ce-03ff-42fe-ad31-0b3c52a23bdb"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		RemoveApp
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="RemoveApp"
+	namespace="AppLayer"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="AppLayer"
+		classname="RemoveApp"
+		methodname="RemoveApplication"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="a90e415c-c603-4406-bc8b-b591378a9d31"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="AppLayerRepository"
+	id="a83108e1-f436-4a3a-862c-8024a53a2d8e"
+	rxversion="6.2"
+	relativepath="AppLayerRepository.rxrep">
+		<codegen
+		classname="AppLayerRepository"
+		namespace="AppLayer"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="f13be46a-c2fa-47a0-8f5d-3a4c11b2b517"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		RemoveApp.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

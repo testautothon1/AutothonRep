@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="STSiOSMFApp.CommonHelper.TapOnLeftButton(String message)" />
+      <Element value="STSiOSMFApp.CommonHelper.VerifyActionBarTitle(String title)" />
+      <Element value="STSiOSMFApp.CommonHelper.TabVerifyNavBarTitle(String title)" />
+      <Element value="STSiOSMFApp.CommonHelper.TapOnRightButton(String message)" />
+      <Element value="STSiOSMFApp.CommonHelper.TabVerifyNavBarFititngTitle(String title)" />
+      <Element value="STSiOSMFApp.CommonHelper.TabTapOnDetailNavBarRight(String message)" />
+    </Array>
+  </Properties>
+</Properties>

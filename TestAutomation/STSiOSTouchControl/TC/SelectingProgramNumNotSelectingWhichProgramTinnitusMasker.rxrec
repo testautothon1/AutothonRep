@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="0f3f6eae-4645-4f17-975c-8d8f52d2bf93"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		SelectingProgramNumNotSelectingWhichProgramTinnitusMasker
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectingProgramNumNotSelectingWhichProgramTinnitusMasker"
+	namespace="STSiOSTouchControl.TC"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="STSiOSTouchControlRepository"
+	id="3b7ccdb2-a3af-418f-8385-46ea623c2d1d"
+	rxversion="6.2"
+	relativepath="..\STSiOSTouchControlRepository.rxrep">
+		<codegen
+		classname="STSiOSTouchControlRepository"
+		namespace="STSiOSTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="20d2592f-8ce7-455f-aa9d-0da08624a655"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

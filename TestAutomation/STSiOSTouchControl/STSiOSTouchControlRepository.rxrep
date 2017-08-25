@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="STSiOSTouchControlRepository"
+id="3b7ccdb2-a3af-418f-8385-46ea623c2d1d"
+rxversion="6.2">
+  <codegen
+  classname="STSiOSTouchControlRepository"
+  namespace="STSiOSTouchControl"/>
+  <rootfolder
+  name="Root"
+  id="20d2592f-8ce7-455f-aa9d-0da08624a655"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

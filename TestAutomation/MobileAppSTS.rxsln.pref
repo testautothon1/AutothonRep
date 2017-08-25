@@ -1,0 +1,22 @@
+﻿<Properties>
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}</string>
+      <string>TC</string>
+      <string>{11E53950-0261-4F22-ABB8-318704BEAA23}</string>
+      <string>eb562779-4d29-47ca-846a-953faa60541a</string>
+      <string>{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}</string>
+      <string>545217ff-d7df-462c-99a2-14091f95089f</string>
+      <string>{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}</string>
+      <string>e4f48fa2-0ee3-4e93-8eec-acb25f99a5d3</string>
+      <string>ae1b150b-3dac-46b9-ab6c-71d9d7cf3a59</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution MobileAppSTS[STSmyHearing[]]]&#xD;&#xA;Solution MobileAppSTS&#xD;&#xA;Solution MobileAppSTS" />
+  <StartupProject value="{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}" />
+</Properties>

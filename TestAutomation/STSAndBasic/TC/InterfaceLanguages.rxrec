@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.0"
+id="505f5cc7-78e2-4001-81a8-27033e2af4c7"
+embeddedrepository="false"
+mode="Global">
+	<name>
+		InterfaceLanguages
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InterfaceLanguages"
+	namespace="STSAndBasic.TC"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="STSAndBasicRepository"
+	id="2eea9c9d-b236-4284-ada4-debc9c7a2f08"
+	rxversion="6.0"
+	relativepath="..\STSAndBasicRepository.rxrep">
+		<codegen
+		classname="STSAndBasicRepository"
+		namespace="STSAndBasic"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="be2fa462-7d5d-4acb-97d9-44e086031045"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InterfaceLanguages.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

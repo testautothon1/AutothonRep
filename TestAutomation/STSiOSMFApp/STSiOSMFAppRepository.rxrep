@@ -1,0 +1,18 @@
+﻿<repository
+name="STSiOSMFAppRepository"
+id="d2bab4dc-0e70-4b9d-b61d-1ce0dba3c6a4"
+rxversion="6.2">
+	<codegen
+	classname="STSiOSMFAppRepository"
+	namespace="STSiOSMFApp"/>
+	<rootfolder
+	name="Root"
+	id="11dc7510-eebc-48c7-83a1-c68d85679829"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

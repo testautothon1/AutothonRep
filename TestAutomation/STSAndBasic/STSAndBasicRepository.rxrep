@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="STSAndBasicRepository"
+id="2eea9c9d-b236-4284-ada4-debc9c7a2f08"
+rxversion="6.0">
+  <codegen
+  classname="STSAndBasicRepository"
+  namespace="STSAndBasic"/>
+  <rootfolder
+  name="Root"
+  id="be2fa462-7d5d-4acb-97d9-44e086031045"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

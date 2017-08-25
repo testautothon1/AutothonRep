@@ -1,0 +1,437 @@
+﻿<repository
+name="STSmyHearingRepository"
+id="1002db60-a7b0-4936-9411-739158d850bf"
+rxversion="6.2">
+	<codegen
+	classname="STSmyHearingRepository"
+	namespace="STSmyHearing"/>
+	<rootfolder
+	name="Root"
+	id="a2821f0b-a64c-47ff-820f-d5ec8b6c113b"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="STAGINGSigniaTeleCarePortal"
+		id="0eb70c34-18b7-462b-b317-da7d82e37450"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<folder
+			name="ContainerProfileManage"
+			id="d4735d8b-c70c-4c4b-9876-2716e89966a1"
+			searchtimeout="30000ms"
+			capname="sectiontag"
+			refimgid="183f31fe-73c7-4ccb-9ab1-858d90a8438f"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="Container"
+				id="48ab7da1-7b8d-4e13-88d7-b494bdbfe0f3"
+				searchtimeout="30000ms"
+				capname="articletag"
+				addcaps="unknown,webelement,articletag"
+				refimgid="e0c56acc-23ff-412f-8cb9-ac438ad33781">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[1]
+				</item>
+				<folder
+				name="PatientNavigation"
+				id="d82944ba-c3f9-47e9-9e18-06507a93d062"
+				searchtimeout="30000ms"
+				capname="articletag"
+				refimgid="9a79394a-76b5-43ec-9aa6-18b9b841742c"
+				isrooted="True"
+				usecache="False">
+					<item
+					name="Settings"
+					id="32048885-9706-471d-8a6e-fd3df2ab1688"
+					searchtimeout="30000ms"
+					capname="buttontag"
+					addcaps="unknown,webelement,buttontag"
+					refimgid="13f626a5-f6bb-4bda-8fc2-b26b8b501371">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//button[@class='fa fa-cog']
+					</item>
+					<item
+					name="EditPatient"
+					id="f6193124-411f-4919-b3fd-1f5dc647debc"
+					searchtimeout="30000ms"
+					capname="spantag"
+					addcaps="unknown,webelement,spantag"
+					refimgid="58d796e4-c706-4016-befc-986d6485ab57">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//span[@innertext='Edit Patient']
+					</item>
+					<item
+					name="ManageLessons"
+					id="39d390dc-bcf8-4452-84c0-a98dcac6bdf1"
+					searchtimeout="30000ms"
+					capname="spantag"
+					addcaps="unknown,webelement,spantag"
+					refimgid="aaf63b8f-81ce-448c-bad7-2de41a4f0609">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//span[@innertext='Manage Lessons']
+					</item>
+					<item
+					name="ConnectToMyHearing"
+					id="330c7063-14d8-4490-aec0-a99d3b843862"
+					searchtimeout="30000ms"
+					capname="spantag"
+					addcaps="unknown,webelement,spantag"
+					refimgid="434bb10d-6789-40ed-83e4-623536725e2d">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//span[@innertext='Connect to myHearing']
+					</item>
+					<item
+					name="FinishTrial"
+					id="d10d64a9-4714-4c1d-b4ff-50e17a8cc584"
+					searchtimeout="30000ms"
+					capname="spantag"
+					addcaps="unknown,webelement,spantag"
+					refimgid="921f1c96-2fac-424f-a3c5-2bc75632266c">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//span[@innertext='Finish Trial']
+					</item>
+					<item
+					name="DeletePatient"
+					id="47ab75f5-7887-4ac0-b21d-04519cd6bfd4"
+					searchtimeout="30000ms"
+					capname="spantag"
+					refpath="/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section/article[2]/div/div/div[2]/div/ul/li[6]/button/span[@innertext='Delete Patient']"
+					addcaps="unknown,webelement,spantag"
+					refimgid="6ab4ca5a-a446-4666-90e7-64d5cd013c61">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']/div/div/div[2]/div/ul/li[6]/?/?/span[@innertext='Delete Patient']
+					</item>
+					<item
+					name="DropdownMenuUp"
+					id="2ef0a6f9-6263-4a2c-bc9f-7e5b4a9d8946"
+					searchtimeout="30000ms"
+					capname="ultag"
+					addcaps="unknown,webelement,ultag"
+					refimgid="665ebb2e-8862-4073-8836-542e8c99adbb">
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']//ul[@class='dropdown-menu up']
+					</item>
+					<basepath>
+						/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']/article[@class='patient-navigation']
+					</basepath>
+				</folder>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section[@tagname='section']
+				</basepath>
+			</folder>
+			<folder
+			name="ManageLessons"
+			id="c15979e9-3720-4e1b-9e0f-e3f40defe01d"
+			searchtimeout="30000ms"
+			capname="sectiontag"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="Module1Lessons"
+				id="8ad14d2d-b399-4fbf-861b-57f7e98103ab"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="2ec1a5f9-2cc8-41d8-be50-e0d29171d054">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section//div[@class~'col-md-6 profile-manage__item' and @childindex='0']/div[@class~'SelectField SelectFieldUnlabeled profile']
+				</item>
+				<item
+				name="Module2Lessons"
+				id="f019a607-4a55-4019-9eea-fe86b1bbfd27"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="88c90050-5fd6-4046-b840-54000d666b8d">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section//div[@class~'col-md-6 profile-manage__item' and @childindex='1']/div[@class~'SelectField SelectFieldUnlabeled profile']
+				</item>
+				<item
+				name="Module3Lessons"
+				id="0371a774-7b78-4f73-88d9-b74b47c8b67c"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="84e70a7d-20b6-4a04-9871-5c24525b1e1a">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section//div[@class~'col-md-6 profile-manage__item' and @childindex='2']/div[@class~'SelectField SelectFieldUnlabeled profile']
+				</item>
+				<item
+				name="Module4Lessons"
+				id="9eec6b33-b70e-40af-bba7-411db69abd91"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="d94d969b-22b0-40d1-93d6-1622ef5a5475">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section//div[@class~'col-md-6 profile-manage__item' and @childindex='3']/div[@class~'SelectField SelectFieldUnlabeled profile']
+				</item>
+				<item
+				name="Save"
+				id="a4b38d78-32f9-4370-897c-62c47e3f968c"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="096d00c2-0031-434e-84e5-34411e8a1067">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section//span[@innertext='Save']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/section
+				</basepath>
+			</folder>
+			<folder
+			name="ContainerLogin"
+			id="ce7a5eeb-ce39-49b3-bbfb-99159c9b2d4b"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refimgid="fc711103-b648-471f-ac0e-24176e124fda"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="Username"
+				id="b97d39c9-cd1b-41b9-80e7-86ec2ee8a9c9"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="9530344d-3302-475f-bf8b-8a014cbf478c">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@data-qa='login']//input[@name='username']
+				</item>
+				<item
+				name="Password"
+				id="cd67334b-4d88-48c8-a530-73e2faefb0dd"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="0595b5c4-7e2f-48e7-9103-5704b42691f0">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@data-qa='login']//input[@name='password']
+				</item>
+				<item
+				name="Login"
+				id="527ef1e9-955d-4420-897b-c38d7425fb02"
+				searchtimeout="30000ms"
+				capname="buttontag"
+				addcaps="unknown,webelement,buttontag"
+				refimgid="5a1347f0-6460-4966-8521-0f4622815758">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@data-qa='login']//button[@class='btn btn-block btn-primary ']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@data-qa='login']
+				</basepath>
+			</folder>
+			<folder
+			name="NavigationBarNavbar"
+			id="eaa653fd-456e-4ece-bad3-89f0017d4009"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refimgid="06a7574b-df08-43cf-8ba0-6b772ad03604"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="DropDown"
+				id="cc8b20ba-0fc1-4c42-80aa-e22bed2976cb"
+				searchtimeout="30000ms"
+				capname="itag"
+				addcaps="unknown,webelement,itag"
+				refimgid="b93aaec8-d689-469d-a364-bcbf5b7dc1fa">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@class='navigation-bar__navbar']//i[@class='fa fa-fw fa-angle-down']
+				</item>
+				<item
+				name="Logout"
+				id="995574ef-cca2-4cdf-ba8d-187962e3dfb7"
+				searchtimeout="30000ms"
+				capname="unknown"
+				addcaps="unknown,webelement,spantag"
+				refimgid="d73d12ea-cd2a-431f-a8cd-95700587e399">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@class='navigation-bar__navbar']//?[@innertext~'Logout']
+				</item>
+				<item
+				name="DropdownUsername"
+				id="127722c5-9e27-4c4d-82df-e2ebaa10f0f8"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="54288d64-cc33-4319-bd2c-4c3fd560c5ff">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@class='navigation-bar__navbar']//div[@class='dropdown__username']
+				</item>
+				<item
+				name="FlagFlagEnUS"
+				id="72be098e-3e58-4a01-8530-6684cc159d1f"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="d5d86015-0144-4724-a219-5993ed6633fe">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@class='navigation-bar__navbar']//span[@class~'flag_en-US']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[@class='navigation-bar__navbar']
+				</basepath>
+			</folder>
+			<folder
+			name="CustomerOverviewPage"
+			id="981668bb-c06c-4c5e-bfd2-04a25b7cdd91"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refimgid="975d95a7-88df-4dcf-890d-6ce826f76b1e"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="Checkbox"
+				id="756c6cf6-bbc0-4573-8f07-c9e830490f2d"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="95434e10-a8f6-4594-8bee-01c3a1e53859">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerOverviewPage']//div[@class='checkbox']
+				</item>
+				<item
+				name="HCP"
+				id="dae54347-b03c-4f34-b17f-3db8ba054923"
+				searchtimeout="30000ms"
+				capname="unknown"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="b4496376-1b0b-4af6-9efc-5fd87e766cfc">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerOverviewPage']//?[@innertext~$HCPUserName]
+				</item>
+				<item
+				name="AddPatient"
+				id="33e741d4-c067-4f06-8166-9556a1f83a28"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="6bf9a7ee-b067-48dd-b0d8-dae79a54e9dd">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerOverviewPage']//span[@innertext='Add Patient']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerOverviewPage']
+				</basepath>
+			</folder>
+			<folder
+			name="CustomerEditPage"
+			id="9971645d-2ce0-4d6c-bcfa-d0ab1e86568d"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refimgid="2ce45bb9-bee2-454d-9df5-ba0908016d70"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="PrimaxAsteriskTeleCare20"
+				id="113555d9-60a2-4f06-b95d-379148d79256"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="1d9be614-5c2e-41b5-ad0c-757b9dd832cd">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerEditPage']//span[@innertext='primax* (TeleCare 2.0)']
+				</item>
+				<item
+				name="PrimaxPermanent"
+				id="3adfde10-4e5a-451a-9281-1467b4f9d271"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="1e3ea5d6-c849-4687-bba1-bc36ceaf965d">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerEditPage']//span[@innertext='primax (permanent)']
+				</item>
+				<item
+				name="PrimaxTemporary"
+				id="66ba4c71-688b-466f-be7f-dcb90096af5f"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="65c95e60-ed0a-4347-8272-a07888ff7b7d">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerEditPage']//span[@innertext='primax (temporary)']
+				</item>
+				<item
+				name="Save"
+				id="e1bf432b-859c-4ce8-9df9-8f5ab11f61e7"
+				searchtimeout="30000ms"
+				capname="buttontag"
+				addcaps="unknown,webelement,buttontag"
+				refimgid="47a109bf-a638-4c8f-8bb7-b600f3062793">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerEditPage']//div[#'react-root']//form[@method='get']/div[6]//button[@innertext='Save']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerEditPage']
+				</basepath>
+			</folder>
+			<folder
+			name="CustomerSetupPage"
+			id="6bfa9fa8-d145-488d-9eab-af8352d4c634"
+			searchtimeout="30000ms"
+			capname="divtag"
+			refimgid="69f39300-0c49-4070-8586-f8ee171ec92d"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="ConnectionCode"
+				id="57229ebe-954e-4625-81b2-c7e5c1fd237d"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1182d387-9ed6-4064-826f-15263362ee19">
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerSetupPage']//div[@class='well well-lg']
+				</item>
+				<basepath>
+					/dom[@domain='integration.telecare.signia-pro.com']//div[#'react-root']/div/div[@class='customerSetupPage']
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='integration.telecare.signia-pro.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DoYouWantGoogleChromeToSaveYourP"
+		id="554e5bbd-e488-4bfe-946e-dc60ad1b39ea"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Do you want Google Chrome to save your password for this site?']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Never"
+			id="035b46fb-c731-4367-b60d-e33e36d34496"
+			searchtimeout="30000ms"
+			capname="button"
+			addcaps="button,accessible"
+			refimgid="b6245c76-5c42-44a5-9bcb-0545f3f13db1">
+				/form[@title~'^Do\ you\ want\ Google\ Chrome']//button[@accessiblename='Never']
+			</item>
+			<basepath>
+				/form[@title~'^Do\ you\ want\ Google\ Chrome']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKFSURBVDhPrZJdSFNhHMaXQUFEBaZTZiV1EUQX
+FkRJ6c6m07lvdVPYlujSuygSlOiiEYSQfd10sZp2nFtiu7GPmyBtaoua86smltNzLKQIhGB5BurG
+eXrPOpqjj6se+PHe/H/P/+Xllfz3wCnJmDdrK5lazT3WrB5gK1XDbFWZn5znpk0lmeLYnzNjURWw
+NuMUEcFWl4NIYEylYIwlYAwKsCZljDGVOcTx9AyqC49EqlXfZ81EXCuoKksrYPQU5nQKzBmo86Im
+xunMuHDRvBDWyzEtCH+5AaMjBVo5ZrXFyXmNvEC0JZIDPU2Go676ZK+hCG/Jlg9k86duN16OLPDP
+wos8M/Ec8z4jvnhO4FvvcXB9hYg/LhoUdVLga3Ttf9CI2ktVGKo4CdbjxmU/B+PNOAwE25043s9E
+kQgokQwUIzlUhGSweBl+y+ZUQb6vsT/fdwYH6QbcqqEQGP26LutuEK7H0faIw3KkFXxICX5ECYQJ
+o7ptqYI8T31wr9eBfT4H9NfseBJegl4QRVlLaO3hsBK9CoyrCKWEEvBv1DtSBbKuur493gYICEWv
+J6dXKm//kjXtHPzBGJKRBlEuBT9GbhJVb00V5NL2Vll3PdZQP3ViILKIZi+HJvcSPIEYJibvp21P
+hBSzKVmIzGvLy+2yr+Z66rDG4d6zaBnuxJWgD00PW5AYq1iXMU4eM0Q1i/rPZHdYnTlElHad3oAd
+0rtWRF7o0uREiBrDlGWLqIqBZJO00+qS0nZkE1Egi7bBQRvAj5dvkBXv+AmlTLR+T1aH1ZLttkZ3
+01Zkumrw+ZVmWRBXR6jYSohqw5R8uzj67+ykjbuOtasKPvafOsSF5DnrnyYtEskPM43KINSheKEA
+AAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables>
+		<var
+		name="HCPUserName"
+		id="d17dc9ae-3b45-4e4b-8294-b0253215a8ef">
+			Pappu
+		</var>
+	</variables>
+</repository>

@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{11E53950-0261-4F22-ABB8-318704BEAA23}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>STSAndTouchControl</RootNamespace>
+    <AssemblyName>STSAndTouchControl</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <projectdefaultrepository>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver">
+      <HintPath>..\External\Appium\appium-dotnet-driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\External\Appium\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External\Appium\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\External\Appium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\External\Appium\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidSetUp.cs">
+      <id>69e1c87b-8a53-4aa5-a6d2-c8d6242860f2</id>
+    </Compile>
+    <Compile Include="AndroidSuiteSetUp.cs">
+      <id>2ac4d702-245c-4cf9-b239-c72db0e5b75b</id>
+    </Compile>
+    <Compile Include="AppLayerRepository.cs">
+      <DependentUpon>AppLayerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>a2970b32-7aea-469e-8009-2fd117098869</id>
+      <BoundTo>0a3ab1fe-0e8d-46f2-8a4c-7c30ca22e25f</BoundTo>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>fccbabd1-e57d-4435-8d4d-ce76e18c4c64</id>
+    </Compile>
+    <Compile Include="CommonHelper.cs">
+      <id>1b75fa71-471d-454f-9abe-b69fb39f8744</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>251095f2-46c5-4a6b-aa33-2dae2baae6c1</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>da86b43f-8adc-4b97-9fc8-351265731ac6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a92400ad-a1c4-40e3-944b-bda72dd12053</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>da86b43f-8adc-4b97-9fc8-351265731ac6</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76d703c4-992a-44c8-a09e-80a082b04a43</id>
+    </Compile>
+    <Compile Include="STSAndTouchControlRepository.cs">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <DependentUpon>STSAndTouchControlRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>274a2579-cf5c-46b4-b075-d1ea1ed6e571</id>
+    </Compile>
+    <Compile Include="TC\AdvancedSettingsSelectionRetained.cs">
+      <BoundTo>7f7e98e4-9317-4717-858d-da7762f53c0e</BoundTo>
+      <DependentUpon>AdvancedSettingsSelectionRetained.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84e90f50-9dd9-459e-b82b-216ea34e2987</id>
+    </Compile>
+    <Compile Include="TC\AdvancedSettingsSelectionRetained.UserCode.cs">
+      <BoundTo>7f7e98e4-9317-4717-858d-da7762f53c0e</BoundTo>
+      <DependentUpon>AdvancedSettingsSelectionRetained.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a50ab6f8-79b4-4a73-9a32-0e477fabf5d8</id>
+    </Compile>
+    <Compile Include="TC\ApplicationVersionNumber.cs">
+      <BoundTo>ca687ec7-e12d-4f1b-9421-8c4f836e7394</BoundTo>
+      <DependentUpon>ApplicationVersionNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16f34b4d-4114-402a-8893-8bfae5d9b463</id>
+    </Compile>
+    <Compile Include="TC\ApplicationVersionNumber.UserCode.cs">
+      <BoundTo>ca687ec7-e12d-4f1b-9421-8c4f836e7394</BoundTo>
+      <DependentUpon>ApplicationVersionNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85f2db20-2dda-4deb-acdf-a941ffdc83b0</id>
+    </Compile>
+    <Compile Include="TC\ChangingProgramNames.cs">
+      <DependentUpon>ChangingProgramNames.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7f536855-143a-40b6-a1eb-011abec8db3c</id>
+      <BoundTo>dc83c7a7-c864-465f-891a-57a708a817d1</BoundTo>
+    </Compile>
+    <Compile Include="TC\ChangingProgramNames.UserCode.cs">
+      <DependentUpon>ChangingProgramNames.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9353fe40-8caf-48b1-9abd-1eb90f9c9483</id>
+      <BoundTo>dc83c7a7-c864-465f-891a-57a708a817d1</BoundTo>
+    </Compile>
+    <Compile Include="TC\FirstSetUptouchControlApplicationCancelAndRetry.cs">
+      <BoundTo>df88f9f5-ccd3-4646-b39d-917b7bb45f8f</BoundTo>
+      <DependentUpon>FirstSetUptouchControlApplicationCancelAndRetry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dcd0d7ab-82a8-451a-aaf0-fd81bed3d9c1</id>
+    </Compile>
+    <Compile Include="TC\FirstSetUptouchControlApplicationCancelAndRetry.UserCode.cs">
+      <BoundTo>df88f9f5-ccd3-4646-b39d-917b7bb45f8f</BoundTo>
+      <DependentUpon>FirstSetUptouchControlApplicationCancelAndRetry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea87ccdd-954c-45dc-a358-4e57eed621d5</id>
+    </Compile>
+    <Compile Include="TC\HelpMenu.cs">
+      <BoundTo>7e56baf0-ff30-4538-941c-b06937710485</BoundTo>
+      <DependentUpon>HelpMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a605f86e-340a-4e6e-a335-9a2e7e26615c</id>
+    </Compile>
+    <Compile Include="TC\HelpMenu.UserCode.cs">
+      <BoundTo>7e56baf0-ff30-4538-941c-b06937710485</BoundTo>
+      <DependentUpon>HelpMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dea9daa9-5bd2-46d6-baec-9d66630457d6</id>
+    </Compile>
+    <Compile Include="TC\ImprintMenu.cs">
+      <BoundTo>7a128585-e074-4895-b7bf-2e35c139ee1e</BoundTo>
+      <DependentUpon>ImprintMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2b5136b-fc29-4faf-98a2-037f440a3ce8</id>
+    </Compile>
+    <Compile Include="TC\ImprintMenu.UserCode.cs">
+      <BoundTo>7a128585-e074-4895-b7bf-2e35c139ee1e</BoundTo>
+      <DependentUpon>ImprintMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a457e36-8724-440a-900b-50762b545886</id>
+    </Compile>
+    <Compile Include="TC\InterfaceLanguages.cs">
+      <BoundTo>5dc4d391-a02d-4620-99a3-88cfdf68bc74</BoundTo>
+      <DependentUpon>InterfaceLanguages.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d9095bf9-9bab-45f3-9253-ce8a8972be0b</id>
+    </Compile>
+    <Compile Include="TC\InterfaceLanguages.UserCode.cs">
+      <BoundTo>5dc4d391-a02d-4620-99a3-88cfdf68bc74</BoundTo>
+      <DependentUpon>InterfaceLanguages.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff26f681-a85c-4491-85c6-70ef3dcf8c7e</id>
+    </Compile>
+    <Compile Include="TC\MFFlowHomeScreen.cs">
+      <BoundTo>31397d7d-0448-4775-a6bb-41e3357f17c1</BoundTo>
+      <DependentUpon>MFFlowHomeScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a121cf4e-f74b-4215-be3c-039ee4ed684b</id>
+    </Compile>
+    <Compile Include="TC\MFFlowHomeScreen.UserCode.cs">
+      <BoundTo>31397d7d-0448-4775-a6bb-41e3357f17c1</BoundTo>
+      <DependentUpon>MFFlowHomeScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bba8fc4b-c44a-4dd4-a517-524f590c4159</id>
+    </Compile>
+    <Compile Include="TC\MFFlowLanguage.cs">
+      <BoundTo>f36e12a6-61c4-403d-815f-492e8cea60d6</BoundTo>
+      <DependentUpon>MFFlowLanguage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>98d4cb84-bc1d-4f6c-8a41-6a8435ccf521</id>
+    </Compile>
+    <Compile Include="TC\MFFlowLanguage.UserCode.cs">
+      <BoundTo>f36e12a6-61c4-403d-815f-492e8cea60d6</BoundTo>
+      <DependentUpon>MFFlowLanguage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ecf72945-fabc-4b4c-95ec-90a69c54fda8</id>
+    </Compile>
+    <Compile Include="TC\MFFlowSettings.cs">
+      <BoundTo>7ffe6ce7-db8a-4bc3-a0b8-4abc9cbfb0d7</BoundTo>
+      <DependentUpon>MFFlowSettings.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d4fb674-d24d-4b4d-b834-3fc192173161</id>
+    </Compile>
+    <Compile Include="TC\MFFlowSettings.UserCode.cs">
+      <BoundTo>7ffe6ce7-db8a-4bc3-a0b8-4abc9cbfb0d7</BoundTo>
+      <DependentUpon>MFFlowSettings.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8cd312fa-02b4-418a-b389-34c9e457fb35</id>
+    </Compile>
+    <Compile Include="TC\MuteFunction.cs">
+      <BoundTo>eb6695b3-778b-4632-a259-db9f5da78858</BoundTo>
+      <DependentUpon>MuteFunction.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49e886bc-fb08-41de-9d79-91360da059a3</id>
+    </Compile>
+    <Compile Include="TC\MuteFunction.UserCode.cs">
+      <BoundTo>eb6695b3-778b-4632-a259-db9f5da78858</BoundTo>
+      <DependentUpon>MuteFunction.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6d9cc1e7-b9b7-4de1-a3b3-a428a4ece5b0</id>
+    </Compile>
+    <Compile Include="TC\ProgramNameAdaption.cs">
+      <BoundTo>9b27f13e-f10f-4bf0-b5dc-2aecf4f3ed8e</BoundTo>
+      <DependentUpon>ProgramNameAdaption.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53ab1daa-47c6-4e8b-ba70-5d66074f4d80</id>
+    </Compile>
+    <Compile Include="TC\ProgramNameAdaption.UserCode.cs">
+      <BoundTo>9b27f13e-f10f-4bf0-b5dc-2aecf4f3ed8e</BoundTo>
+      <DependentUpon>ProgramNameAdaption.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc006cc2-8004-45ec-9492-dd3e16e7b2aa</id>
+    </Compile>
+    <Compile Include="TC\QuitOptionOfTheApplication.cs">
+      <BoundTo>766015b5-785b-44fe-875e-b8382933a201</BoundTo>
+      <DependentUpon>QuitOptionOfTheApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>77d14f2c-e7c8-49a4-a513-df6025a7774e</id>
+    </Compile>
+    <Compile Include="TC\QuitOptionOfTheApplication.UserCode.cs">
+      <BoundTo>766015b5-785b-44fe-875e-b8382933a201</BoundTo>
+      <DependentUpon>QuitOptionOfTheApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d785350-4ad9-46f1-a08c-66417b348d63</id>
+    </Compile>
+    <Compile Include="TC\RateTheAppAutomaticPopup.cs">
+      <BoundTo>2f8e696b-c24e-446f-8fb5-dd5346fd14d0</BoundTo>
+      <DependentUpon>RateTheAppAutomaticPopup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d6d4ee9-1a20-4486-b9d3-e51c9f2665dd</id>
+    </Compile>
+    <Compile Include="TC\RateTheAppAutomaticPopup.UserCode.cs">
+      <BoundTo>2f8e696b-c24e-446f-8fb5-dd5346fd14d0</BoundTo>
+      <DependentUpon>RateTheAppAutomaticPopup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>660d3dc1-2e30-494b-ad45-10da55f97f84</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumNotSelectingTinnitusMasker.cs">
+      <BoundTo>3a0db0e4-91f6-491b-a09a-99e9530ab05a</BoundTo>
+      <DependentUpon>SelectingProgramNumNotSelectingTinnitusMasker.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aff934bf-5c2f-4c5b-9e32-103dd16f4eeb</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumNotSelectingTinnitusMasker.UserCode.cs">
+      <BoundTo>3a0db0e4-91f6-491b-a09a-99e9530ab05a</BoundTo>
+      <DependentUpon>SelectingProgramNumNotSelectingTinnitusMasker.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20f87415-10ef-492c-92b8-14dfb55cd690</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.cs">
+      <BoundTo>65b2a548-04b9-4070-b7d6-3178ee156256</BoundTo>
+      <DependentUpon>SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b85c62b7-c885-4edb-aee9-6f50385dbaa6</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.UserCode.cs">
+      <BoundTo>65b2a548-04b9-4070-b7d6-3178ee156256</BoundTo>
+      <DependentUpon>SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>abc2a7d0-1046-4649-9265-d1215408730c</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumberAndTinnitusMasker.cs">
+      <BoundTo>c3a90b15-8ca5-4104-ba2a-1a474cec18c6</BoundTo>
+      <DependentUpon>SelectingProgramNumberAndTinnitusMasker.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>05d4673c-209a-4ec5-a095-d57c23c91cad</id>
+    </Compile>
+    <Compile Include="TC\SelectingProgramNumberAndTinnitusMasker.UserCode.cs">
+      <BoundTo>c3a90b15-8ca5-4104-ba2a-1a474cec18c6</BoundTo>
+      <DependentUpon>SelectingProgramNumberAndTinnitusMasker.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e312198-f6ac-4545-ad32-1cdb4f9de03c</id>
+    </Compile>
+    <Compile Include="TC\SettingsMenu.cs">
+      <BoundTo>886f7252-6883-49d2-90b3-53ec70b575ae</BoundTo>
+      <DependentUpon>SettingsMenu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5014d9f-a108-402c-abfb-36f8defb6ef9</id>
+    </Compile>
+    <Compile Include="TC\SettingsMenu.UserCode.cs">
+      <BoundTo>886f7252-6883-49d2-90b3-53ec70b575ae</BoundTo>
+      <DependentUpon>SettingsMenu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d5d8a82-16ee-4115-8441-b49723a1c77e</id>
+    </Compile>
+    <Compile Include="TC\SpatialConfiguratorForARC.cs">
+      <BoundTo>95fba253-347c-44db-9b9c-1a536ce03cae</BoundTo>
+      <DependentUpon>SpatialConfiguratorForARC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5522683-990c-41d6-b32d-16d431ebfbcb</id>
+    </Compile>
+    <Compile Include="TC\SpatialConfiguratorForARC.UserCode.cs">
+      <BoundTo>95fba253-347c-44db-9b9c-1a536ce03cae</BoundTo>
+      <DependentUpon>SpatialConfiguratorForARC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0ba6685-65ad-473c-ba06-bb7d8cb7af12</id>
+    </Compile>
+    <Compile Include="TC\SpatialConfiguratorIntellizoom.cs">
+      <BoundTo>c126a364-9cbe-4c0d-b05e-64276b638079</BoundTo>
+      <DependentUpon>SpatialConfiguratorIntellizoom.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c203b85-545b-4bea-9e4c-a645d83c7725</id>
+    </Compile>
+    <Compile Include="TC\SpatialConfiguratorIntellizoom.UserCode.cs">
+      <BoundTo>c126a364-9cbe-4c0d-b05e-64276b638079</BoundTo>
+      <DependentUpon>SpatialConfiguratorIntellizoom.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9318219a-3ab8-422f-bd9f-f3662197d829</id>
+    </Compile>
+    <Compile Include="TC\StartingTouchControlApplication.cs">
+      <BoundTo>555e7ffa-ee21-4060-a375-65aa80f5c16f</BoundTo>
+      <DependentUpon>StartingTouchControlApplication.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>47ad2469-1521-49da-9b85-3b78e121bd1e</id>
+    </Compile>
+    <Compile Include="TC\StartingTouchControlApplication.UserCode.cs">
+      <BoundTo>555e7ffa-ee21-4060-a375-65aa80f5c16f</BoundTo>
+      <DependentUpon>StartingTouchControlApplication.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb565bf1-6c36-4e5f-85ff-9c5b6cb54398</id>
+    </Compile>
+    <Compile Include="TC\SwitchingApplicationLanguages.cs">
+      <BoundTo>8e4a5a17-8da0-4676-838a-fd77a3449002</BoundTo>
+      <DependentUpon>SwitchingApplicationLanguages.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34d2da8d-ec63-405b-9d2f-ca642ef43d32</id>
+    </Compile>
+    <Compile Include="TC\SwitchingApplicationLanguages.UserCode.cs">
+      <BoundTo>8e4a5a17-8da0-4676-838a-fd77a3449002</BoundTo>
+      <DependentUpon>SwitchingApplicationLanguages.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f7b7cafc-3314-4827-a08c-85a66c162286</id>
+    </Compile>
+    <Compile Include="TC\TinnitusMaskerVolumeChange.cs">
+      <BoundTo>16d09bf2-e16d-4c85-8538-6525d256181a</BoundTo>
+      <DependentUpon>TinnitusMaskerVolumeChange.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2cbbe6d2-99cb-4d26-9e15-8b2211c9f768</id>
+    </Compile>
+    <Compile Include="TC\TinnitusMaskerVolumeChange.UserCode.cs">
+      <BoundTo>16d09bf2-e16d-4c85-8538-6525d256181a</BoundTo>
+      <DependentUpon>TinnitusMaskerVolumeChange.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>59e3deb5-2ab1-4f3f-870c-76e5320e2e4b</id>
+    </Compile>
+    <Compile Include="TC\TinnitusMixedMode.cs">
+      <BoundTo>9aa68436-f436-4e0c-a089-d651a6206575</BoundTo>
+      <DependentUpon>TinnitusMixedMode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbbbc24f-56e7-4295-9fff-73b81b904200</id>
+    </Compile>
+    <Compile Include="TC\TinnitusMixedMode.UserCode.cs">
+      <BoundTo>9aa68436-f436-4e0c-a089-d651a6206575</BoundTo>
+      <DependentUpon>TinnitusMixedMode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a6dfbb92-5b0b-49c8-b11f-78695caad5a7</id>
+    </Compile>
+    <Compile Include="TC\UsageStatistic.cs">
+      <BoundTo>952f3883-6351-4c58-b7b1-d0958e1ea0d0</BoundTo>
+      <DependentUpon>UsageStatistic.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eead85e9-3361-4113-9c91-42dd2f3ff263</id>
+    </Compile>
+    <Compile Include="TC\UsageStatistic.UserCode.cs">
+      <BoundTo>952f3883-6351-4c58-b7b1-d0958e1ea0d0</BoundTo>
+      <DependentUpon>UsageStatistic.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2adf8ab4-e273-4ea8-87a7-6000be121f60</id>
+    </Compile>
+    <Compile Include="TC\VerifyTheAdvancedSettings.cs">
+      <BoundTo>5459a94d-ffc2-4146-b8bb-e73cd83a730d</BoundTo>
+      <DependentUpon>VerifyTheAdvancedSettings.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c5a34bb-d699-4af7-9c43-a3f37400e9e2</id>
+    </Compile>
+    <Compile Include="TC\VerifyTheAdvancedSettings.UserCode.cs">
+      <BoundTo>5459a94d-ffc2-4146-b8bb-e73cd83a730d</BoundTo>
+      <DependentUpon>VerifyTheAdvancedSettings.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8f7804c-e916-436c-91da-e7470b677794</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>e648bbfe-99a9-4243-8a74-f57700319642</id>
+    </None>
+    <None Include="AppLayerRepository.rximg">
+      <DependentUpon>AppLayerRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8aa9e428-3d65-4c40-a9c0-82a2e102f7b9</id>
+      <BoundTo>0a3ab1fe-0e8d-46f2-8a4c-7c30ca22e25f</BoundTo>
+    </None>
+    <None Include="AppLayerRepository.rxrep">
+      <id>0a3ab1fe-0e8d-46f2-8a4c-7c30ca22e25f</id>
+      <repoid>f0816ce8-2bc8-45c1-86b2-99f531216fca</repoid>
+      <reporootid>f13be46a-c2fa-47a0-8f5d-3a4c11b2b517</reporootid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>da86b43f-8adc-4b97-9fc8-351265731ac6</id>
+      <recordtableid>c04fa1e1-0dc1-4e28-98c1-424f34d1189b</recordtableid>
+    </None>
+    <None Include="STSAndTouchControlRepository.rximg">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <DependentUpon>STSAndTouchControlRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>e4470027-c62e-4d2a-9eba-24895298b78a</id>
+    </None>
+    <None Include="STSAndTouchControlRepository.rxrep">
+      <id>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</id>
+      <repoid>ca01960c-087d-4afd-a855-4905ff512d8f</repoid>
+      <reporootid>5cc381e5-290e-438d-8676-262e4a1c6728</reporootid>
+    </None>
+    <None Include="TC\AdvancedSettingsSelectionRetained.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>7f7e98e4-9317-4717-858d-da7762f53c0e</id>
+      <recordtableid>5a566629-5789-4612-90c9-d25f90739118</recordtableid>
+    </None>
+    <None Include="TC\ApplicationVersionNumber.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>ca687ec7-e12d-4f1b-9421-8c4f836e7394</id>
+      <recordtableid>1667cc5f-9636-4f80-804d-91f6bdcd8827</recordtableid>
+    </None>
+    <None Include="TC\ChangingProgramNames.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>dc83c7a7-c864-465f-891a-57a708a817d1</id>
+      <recordtableid>5a079097-fbd9-462a-8497-b8410a22c096</recordtableid>
+    </None>
+    <None Include="TC\FirstSetUptouchControlApplicationCancelAndRetry.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>df88f9f5-ccd3-4646-b39d-917b7bb45f8f</id>
+      <recordtableid>18764e08-028f-4bb5-b13f-f6d991128838</recordtableid>
+    </None>
+    <None Include="TC\HelpMenu.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>7e56baf0-ff30-4538-941c-b06937710485</id>
+      <recordtableid>24884655-6072-4905-9389-133d940f53c6</recordtableid>
+    </None>
+    <None Include="TC\ImprintMenu.rxrec">
+      <id>7a128585-e074-4895-b7bf-2e35c139ee1e</id>
+      <recordtableid>ca5cc900-644c-4b4d-9009-8b402664aaac</recordtableid>
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+    </None>
+    <None Include="TC\InterfaceLanguages.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>5dc4d391-a02d-4620-99a3-88cfdf68bc74</id>
+      <recordtableid>cd39ab2a-239d-4c59-8490-cdc8fad54627</recordtableid>
+    </None>
+    <None Include="TC\MFFlowHomeScreen.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>31397d7d-0448-4775-a6bb-41e3357f17c1</id>
+      <recordtableid>6fa48cdc-3e09-4b0f-81f2-e1f2099de577</recordtableid>
+    </None>
+    <None Include="TC\MFFlowLanguage.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>f36e12a6-61c4-403d-815f-492e8cea60d6</id>
+      <recordtableid>2b316d03-3e84-458b-a178-218d795a35d7</recordtableid>
+    </None>
+    <None Include="TC\MFFlowSettings.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>7ffe6ce7-db8a-4bc3-a0b8-4abc9cbfb0d7</id>
+      <recordtableid>dcdc8d30-32c3-423b-aee9-cf2db47369aa</recordtableid>
+    </None>
+    <None Include="TC\MuteFunction.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>eb6695b3-778b-4632-a259-db9f5da78858</id>
+      <recordtableid>3e69ec70-b303-415c-a4e8-f2ae86f21b2e</recordtableid>
+    </None>
+    <None Include="TC\ProgramNameAdaption.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>9b27f13e-f10f-4bf0-b5dc-2aecf4f3ed8e</id>
+      <recordtableid>7bb2285a-b7b3-479e-8a92-e51f9ce05f22</recordtableid>
+    </None>
+    <None Include="TC\QuitOptionOfTheApplication.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>766015b5-785b-44fe-875e-b8382933a201</id>
+      <recordtableid>46693b37-e3e3-4cf7-a63c-7da1838d2a55</recordtableid>
+    </None>
+    <None Include="TC\RateTheAppAutomaticPopup.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>2f8e696b-c24e-446f-8fb5-dd5346fd14d0</id>
+      <recordtableid>7460a8a2-6a73-46f2-bd24-d263a98d6cdd</recordtableid>
+    </None>
+    <None Include="TC\SelectingProgramNumNotSelectingTinnitusMasker.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>3a0db0e4-91f6-491b-a09a-99e9530ab05a</id>
+      <recordtableid>b143737a-d3ca-4002-81c9-baeed3c0c23a</recordtableid>
+    </None>
+    <None Include="TC\SelectingProgramNumNotSelectingWhichProgramTinnitusMasker.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>65b2a548-04b9-4070-b7d6-3178ee156256</id>
+      <recordtableid>f6e81047-148c-4f87-b92f-2a7da733e014</recordtableid>
+    </None>
+    <None Include="TC\SelectingProgramNumberAndTinnitusMasker.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>c3a90b15-8ca5-4104-ba2a-1a474cec18c6</id>
+      <recordtableid>fd0855f5-9803-4a9d-a063-41fbe1725e7f</recordtableid>
+    </None>
+    <None Include="TC\SettingsMenu.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>886f7252-6883-49d2-90b3-53ec70b575ae</id>
+      <recordtableid>dad3f571-37c5-4687-8af1-533285d7405d</recordtableid>
+    </None>
+    <None Include="TC\SpatialConfiguratorForARC.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>95fba253-347c-44db-9b9c-1a536ce03cae</id>
+      <recordtableid>e8c18e4a-a2d2-4991-b8a6-e6ba26598256</recordtableid>
+    </None>
+    <None Include="TC\SpatialConfiguratorIntellizoom.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>c126a364-9cbe-4c0d-b05e-64276b638079</id>
+      <recordtableid>cdedadc9-e844-4e2c-864c-07dfa590a4e3</recordtableid>
+    </None>
+    <None Include="TC\StartingTouchControlApplication.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>555e7ffa-ee21-4060-a375-65aa80f5c16f</id>
+      <recordtableid>15582306-30cf-426e-99e9-9b23c8351be1</recordtableid>
+    </None>
+    <None Include="TC\SwitchingApplicationLanguages.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>8e4a5a17-8da0-4676-838a-fd77a3449002</id>
+      <recordtableid>29ec1e98-7c56-441e-94ee-bad58679ff58</recordtableid>
+    </None>
+    <None Include="TC\TinnitusMaskerVolumeChange.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>16d09bf2-e16d-4c85-8538-6525d256181a</id>
+      <recordtableid>ac9fe178-97b7-4349-aaf0-6dbd045d2045</recordtableid>
+    </None>
+    <None Include="TC\TinnitusMixedMode.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>9aa68436-f436-4e0c-a089-d651a6206575</id>
+      <recordtableid>6e0ef71c-15b7-4a54-afd6-8754d171470e</recordtableid>
+    </None>
+    <None Include="TC\UsageStatistic.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>952f3883-6351-4c58-b7b1-d0958e1ea0d0</id>
+      <recordtableid>1acf92a8-464c-438a-9d39-5d02846863d0</recordtableid>
+    </None>
+    <None Include="TC\VerifyTheAdvancedSettings.rxrec">
+      <BoundTo>d0f8cf21-6c20-4d9c-8738-84cefec1be3c</BoundTo>
+      <id>5459a94d-ffc2-4146-b8bb-e73cd83a730d</id>
+      <recordtableid>35773338-f9ed-4576-9877-6387f581709e</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STSAndTouchControl.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>71c8edb0-3625-4446-bd1e-03c5ed7a2e3f</id>
+    </Content>
+    <Content Include="STSAndTouchControl.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c6ac510d-b7ed-4ef6-8436-7c0f8165cb1d</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLayer\AppLayer.csproj">
+      <Project>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</Project>
+      <Name>AppLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogCapturer\LogCapturer.csproj">
+      <Project>{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}</Project>
+      <Name>LogCapturer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\STSAndBasic\STSAndBasic.csproj">
+      <Project>{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}</Project>
+      <Name>STSAndBasic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TC">
+      <id>eb562779-4d29-47ca-846a-953faa60541a</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

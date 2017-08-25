@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.2">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			name="STSmyHearing"
+			id="26bb254f-17df-42cd-b810-7ead0e872298"/>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			name="STSmyHearing"
+			id="26bb254f-17df-42cd-b810-7ead0e872298"/>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,18 @@
+﻿<repository
+name="AppLayerRepository"
+id="f0816ce8-2bc8-45c1-86b2-99f531216fca"
+rxversion="6.0">
+	<codegen
+	classname="AppLayerRepository"
+	namespace="STSAndTouchControl"/>
+	<rootfolder
+	name="Root"
+	id="f13be46a-c2fa-47a0-8f5d-3a4c11b2b517"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

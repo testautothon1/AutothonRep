@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="1d74af86-aa53-4631-9e38-63b8127c81f7"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		TearDown
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="TearDown"
+	namespace="AppLayer"/>
+	<variables/>
+	<recorditems>
+		<userrecorditem
+		enabled="True"
+		optional="False"
+		namespace="AppLayer"
+		classname="TearDown"
+		methodname="CloseApplication"
+		isexternaltestmethod="False"
+		varname="">
+			<comment/>
+			<bindings/>
+			<arguments
+			id="ba10ada5-00c0-40d2-a0b6-5da670eed251"/>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	name="AppLayerRepository"
+	id="a83108e1-f436-4a3a-862c-8024a53a2d8e"
+	rxversion="6.2"
+	relativepath="AppLayerRepository.rxrep">
+		<codegen
+		classname="AppLayerRepository"
+		namespace="AppLayer"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="f13be46a-c2fa-47a0-8f5d-3a4c11b2b517"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		TearDown.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

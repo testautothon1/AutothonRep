@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AppLayer</RootNamespace>
+    <AssemblyName>AppLayer</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <projectdefaultrepository>9de7e304-ff94-492d-86ef-67b9dfa439b4</projectdefaultrepository>
+    <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver">
+      <HintPath>..\External\Appium\appium-dotnet-driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\External\Appium\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External\Appium\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\External\Appium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\External\Appium\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdbClear.cs">
+      <id>87202656-cb3d-4aa0-a48c-89a34939ff59</id>
+    </Compile>
+    <Compile Include="Logger.cs">
+      <id>db6474ce-75c6-4080-85e7-d0e75218c9a6</id>
+    </Compile>
+    <Compile Include="RemoveApp.cs">
+      <BoundTo>b2b48b84-c4ef-4cd9-ae05-d096cd150676</BoundTo>
+      <DependentUpon>RemoveApp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68e1d1a8-e826-4656-8ac4-7f8d84df330e</id>
+    </Compile>
+    <Compile Include="RemoveApp.UserCode.cs">
+      <BoundTo>b2b48b84-c4ef-4cd9-ae05-d096cd150676</BoundTo>
+      <DependentUpon>RemoveApp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20660297-2856-4262-888e-24c05927279b</id>
+    </Compile>
+    <Compile Include="TearDown.cs">
+      <BoundTo>a5301ef8-78ee-4fa3-8504-e1667e909c7f</BoundTo>
+      <DependentUpon>TearDown.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a8d23ce-454e-4ea9-ab9a-5adbdc627a95</id>
+    </Compile>
+    <Compile Include="TearDown.UserCode.cs">
+      <BoundTo>a5301ef8-78ee-4fa3-8504-e1667e909c7f</BoundTo>
+      <DependentUpon>TearDown.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5c7b4f71-b333-492d-a648-c5f0163dc1b6</id>
+    </Compile>
+    <Compile Include="AppiumService\Accessor.cs">
+      <id>8cdc60fb-d428-4ab3-8858-44d00b70c068</id>
+    </Compile>
+    <Compile Include="AppiumService\KeywordImplementation.cs">
+      <id>20fd33b8-95f6-414e-b965-ee24966429e6</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AppLayerRepository.cs">
+      <BoundTo>9de7e304-ff94-492d-86ef-67b9dfa439b4</BoundTo>
+      <DependentUpon>AppLayerRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>0e04a266-0742-4fb0-a950-e7f1277afc05</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>576443e7-50d0-4111-81ea-fa421362f2f7</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RemoveApp.rxrec">
+      <BoundTo>9de7e304-ff94-492d-86ef-67b9dfa439b4</BoundTo>
+      <id>b2b48b84-c4ef-4cd9-ae05-d096cd150676</id>
+      <recordtableid>e06588ce-03ff-42fe-ad31-0b3c52a23bdb</recordtableid>
+    </None>
+    <None Include="TearDown.rxrec">
+      <BoundTo>9de7e304-ff94-492d-86ef-67b9dfa439b4</BoundTo>
+      <id>a5301ef8-78ee-4fa3-8504-e1667e909c7f</id>
+      <recordtableid>1d74af86-aa53-4631-9e38-63b8127c81f7</recordtableid>
+    </None>
+    <None Include="AppLayerRepository.rximg">
+      <BoundTo>9de7e304-ff94-492d-86ef-67b9dfa439b4</BoundTo>
+      <DependentUpon>AppLayerRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>28beff72-3895-4ddc-a96a-ba18aab1eda3</id>
+    </None>
+    <None Include="AppLayerRepository.rxrep">
+      <id>9de7e304-ff94-492d-86ef-67b9dfa439b4</id>
+      <repoid>a83108e1-f436-4a3a-862c-8024a53a2d8e</repoid>
+      <reporootid>f13be46a-c2fa-47a0-8f5d-3a4c11b2b517</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppLayer.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>049cb017-d024-499c-9f48-932619d86423</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppiumService">
+      <id>84fe0d3d-6aac-4f00-8942-a64ca9933f23</id>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogCapturer\LogCapturer.csproj">
+      <Project>{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}</Project>
+      <Name>LogCapturer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

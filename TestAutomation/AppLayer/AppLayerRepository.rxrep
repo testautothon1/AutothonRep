@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="AppLayerRepository"
+id="a83108e1-f436-4a3a-862c-8024a53a2d8e"
+rxversion="6.0">
+  <codegen
+  classname="AppLayerRepository"
+  namespace="AppLayer"/>
+  <rootfolder
+  name="Root"
+  id="f13be46a-c2fa-47a0-8f5d-3a4c11b2b517"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

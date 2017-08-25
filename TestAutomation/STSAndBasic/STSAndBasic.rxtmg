@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="STSAndBasic"
+      id="12c43b34-6b30-41f6-859a-f0ae0e2ac5f7"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="STSAndBasic"
+      id="12c43b34-6b30-41f6-859a-f0ae0e2ac5f7"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

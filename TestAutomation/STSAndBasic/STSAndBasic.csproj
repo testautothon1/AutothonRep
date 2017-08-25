@@ -1,0 +1,1492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>STSAndBasic</RootNamespace>
+    <AssemblyName>STSAndBasic</AssemblyName>
+    <RanorexVersion>6.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <projectdefaultrepository>1b81727f-2307-4c6e-8d84-04f5f165adf8</projectdefaultrepository>
+    <TargetFrameworkProfile />
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <IntermediateOutputPath>C:\Users\ic014157\AppData\Local\Temp\vsB862.tmp\x86\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <IntermediateOutputPath>C:\Users\ic014157\AppData\Local\Temp\vsB862.tmp\x86\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="appium-dotnet-driver">
+      <HintPath>..\External\Appium\appium-dotnet-driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>..\External\Appium\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External\Appium\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\External\Appium\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\External\Appium\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndroidSetUp.cs">
+      <id>77bdd2bd-84f8-46b5-8e12-11110adb566c</id>
+    </Compile>
+    <Compile Include="AndroidSuiteSetUp.cs">
+      <id>895efc62-f9b9-4656-b6e8-428f8836e596</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>c594cecc-d695-4cc9-84af-f6e897ef0235</id>
+    </Compile>
+    <Compile Include="CommonHelper.cs">
+      <id>57f3a02e-0f83-4148-b80f-08632735e107</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>803cfda9-0e8d-49ca-8cce-e01032173ec1</id>
+    </Compile>
+    <Compile Include="STSAndBasicRepository.cs">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <DependentUpon>STSAndBasicRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>dba38c95-1376-4ab2-88cb-984f35e12f24</id>
+    </Compile>
+    <Compile Include="TC\AppInfo.cs">
+      <BoundTo>fb202265-7a21-4d02-a581-a45775c60e19</BoundTo>
+      <DependentUpon>AppInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ca69344e-218e-4cd5-a23d-9d425cb37bdc</id>
+    </Compile>
+    <Compile Include="TC\AppInfo.UserCode.cs">
+      <BoundTo>fb202265-7a21-4d02-a581-a45775c60e19</BoundTo>
+      <DependentUpon>AppInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8dc7c310-8716-4085-a7d9-d70f7d881ff7</id>
+    </Compile>
+    <Compile Include="TC\AppInfoSupportMail.cs">
+      <BoundTo>d72b9c8a-1260-49a6-8911-6d7b562e20fb</BoundTo>
+      <DependentUpon>AppInfoSupportMail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d8c93c98-f8d4-4a16-8e29-0122b7fc78c4</id>
+    </Compile>
+    <Compile Include="TC\AppInfoSupportMail.UserCode.cs">
+      <BoundTo>d72b9c8a-1260-49a6-8911-6d7b562e20fb</BoundTo>
+      <DependentUpon>AppInfoSupportMail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65e27c32-806c-4e72-9336-b08fc78cfe6b</id>
+    </Compile>
+    <Compile Include="TC\AppVersion.cs">
+      <BoundTo>043d8dfe-0670-4c38-bdfb-c6c7485179f0</BoundTo>
+      <DependentUpon>AppVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72736353-8718-4995-92b6-272968f1a9d3</id>
+    </Compile>
+    <Compile Include="TC\AppVersion.UserCode.cs">
+      <BoundTo>043d8dfe-0670-4c38-bdfb-c6c7485179f0</BoundTo>
+      <DependentUpon>AppVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c4441656-9ba1-4770-badb-fbb4bbc8bc3b</id>
+    </Compile>
+    <Compile Include="TC\BetterEarSide.cs">
+      <BoundTo>8ec8adee-a432-451c-b398-a274425c8db2</BoundTo>
+      <DependentUpon>BetterEarSide.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bcdc4798-6b75-426f-9eec-1c66aa4a657f</id>
+    </Compile>
+    <Compile Include="TC\BetterEarSide.UserCode.cs">
+      <BoundTo>8ec8adee-a432-451c-b398-a274425c8db2</BoundTo>
+      <DependentUpon>BetterEarSide.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f634c40-ca1b-4107-bb7b-b08e6d675027</id>
+    </Compile>
+    <Compile Include="TC\BinauralFlowRecommendationGiven.cs">
+      <BoundTo>7da6326f-4085-4786-bc15-ffd7106d0604</BoundTo>
+      <DependentUpon>BinauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba16c46e-7ca3-4d36-a4c2-e79ff309e92d</id>
+    </Compile>
+    <Compile Include="TC\BinauralFlowRecommendationGiven.UserCode.cs">
+      <BoundTo>7da6326f-4085-4786-bc15-ffd7106d0604</BoundTo>
+      <DependentUpon>BinauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d9a0fae1-3315-4339-a950-4daef2ecf66a</id>
+    </Compile>
+    <Compile Include="TC\BinauralFlowRecommendationNotGiven.cs">
+      <BoundTo>9edff884-60e3-4bd9-84d5-b51847c365db</BoundTo>
+      <DependentUpon>BinauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c0f6699-e04b-4edb-af59-ab1091034d59</id>
+    </Compile>
+    <Compile Include="TC\BinauralFlowRecommendationNotGiven.UserCode.cs">
+      <BoundTo>9edff884-60e3-4bd9-84d5-b51847c365db</BoundTo>
+      <DependentUpon>BinauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bfbb0060-00e5-4229-9040-8f810fd91c48</id>
+    </Compile>
+    <Compile Include="TC\ClusterInstantRunP.cs">
+      <BoundTo>3fb7a9ac-0824-4c89-8e25-0af0b4622be7</BoundTo>
+      <DependentUpon>ClusterInstantRunP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8759ab1d-bba7-42e9-82f1-922a59263dea</id>
+    </Compile>
+    <Compile Include="TC\ClusterInstantRunP.UserCode.cs">
+      <BoundTo>3fb7a9ac-0824-4c89-8e25-0af0b4622be7</BoundTo>
+      <DependentUpon>ClusterInstantRunP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31935390-06a9-4bf6-9220-4674a230bdac</id>
+    </Compile>
+    <Compile Include="TC\ClusterInstantRunSP.cs">
+      <BoundTo>b0083be1-291d-41ec-8efc-51f051f4deb4</BoundTo>
+      <DependentUpon>ClusterInstantRunSP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86d1e982-7b7d-4b46-b7cb-8f80b65c7b88</id>
+    </Compile>
+    <Compile Include="TC\ClusterInstantRunSP.UserCode.cs">
+      <BoundTo>b0083be1-291d-41ec-8efc-51f051f4deb4</BoundTo>
+      <DependentUpon>ClusterInstantRunSP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>df3bd1c4-7265-46f9-a6ae-89f49b141500</id>
+    </Compile>
+    <Compile Include="TC\CodeValidation.cs">
+      <BoundTo>001a320a-58af-4f4a-9d37-5a18e45bba0a</BoundTo>
+      <DependentUpon>CodeValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>01fa582f-7aed-44a7-835e-bbdc91ad3379</id>
+    </Compile>
+    <Compile Include="TC\CodeValidation.UserCode.cs">
+      <BoundTo>001a320a-58af-4f4a-9d37-5a18e45bba0a</BoundTo>
+      <DependentUpon>CodeValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f747ac0-ca3e-439c-9bd7-3397ada789b9</id>
+    </Compile>
+    <Compile Include="TC\ConnexxBrandSelection.cs">
+      <BoundTo>0c9407e3-7454-4dfd-8e34-6e040355cf3d</BoundTo>
+      <DependentUpon>ConnexxBrandSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>273575c3-6b0d-41ea-a4df-5910315c4329</id>
+    </Compile>
+    <Compile Include="TC\ConnexxBrandSelection.UserCode.cs">
+      <BoundTo>0c9407e3-7454-4dfd-8e34-6e040355cf3d</BoundTo>
+      <DependentUpon>ConnexxBrandSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>56a62b2c-6d6c-4602-946a-22d5164f94e1</id>
+    </Compile>
+    <Compile Include="TC\ContinueWorkflow.cs">
+      <BoundTo>5b3dd7b1-bfd1-4ba0-976e-a3daf8c3019c</BoundTo>
+      <DependentUpon>ContinueWorkflow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c73e9b08-746d-4e8e-ad36-f9e286ea22d4</id>
+    </Compile>
+    <Compile Include="TC\ContinueWorkflow.UserCode.cs">
+      <BoundTo>5b3dd7b1-bfd1-4ba0-976e-a3daf8c3019c</BoundTo>
+      <DependentUpon>ContinueWorkflow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4f6b2ac5-dbd1-4c54-8e3d-526ab50239f7</id>
+    </Compile>
+    <Compile Include="TC\DeletingAudiogramPoints.cs">
+      <BoundTo>b21f0597-5281-4dc2-a3cf-ac11c0db0aff</BoundTo>
+      <DependentUpon>DeletingAudiogramPoints.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>536c686f-e449-42e4-bc52-6e72fc34d9bc</id>
+    </Compile>
+    <Compile Include="TC\DeletingAudiogramPoints.UserCode.cs">
+      <BoundTo>b21f0597-5281-4dc2-a3cf-ac11c0db0aff</BoundTo>
+      <DependentUpon>DeletingAudiogramPoints.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1626334-7ba7-48ee-8917-aec6539451d6</id>
+    </Compile>
+    <Compile Include="TC\DeletingCompleteAudiogram.cs">
+      <BoundTo>9925ceac-8076-4980-9ca3-55c29e163874</BoundTo>
+      <DependentUpon>DeletingCompleteAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e236daa4-6b3d-46a6-8395-8bf7a9f4e801</id>
+    </Compile>
+    <Compile Include="TC\DeletingCompleteAudiogram.UserCode.cs">
+      <BoundTo>9925ceac-8076-4980-9ca3-55c29e163874</BoundTo>
+      <DependentUpon>DeletingCompleteAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db4130bd-0a8b-4d70-a93b-1e7b3d4a069d</id>
+    </Compile>
+    <Compile Include="TC\DeletingCustomer.cs">
+      <BoundTo>04ec0cb8-4b36-4df0-b1d7-8492951cf2bd</BoundTo>
+      <DependentUpon>DeletingCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c19e35bb-e515-485a-9087-c3a5eb7fb9af</id>
+    </Compile>
+    <Compile Include="TC\DeletingCustomer.UserCode.cs">
+      <BoundTo>04ec0cb8-4b36-4df0-b1d7-8492951cf2bd</BoundTo>
+      <DependentUpon>DeletingCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d60409c0-0336-41d9-8391-5d13fc28a722</id>
+    </Compile>
+    <Compile Include="TC\DiscardCouplingSelection.cs">
+      <BoundTo>9f1e47be-90eb-4a83-b3f9-9973c65eb53e</BoundTo>
+      <DependentUpon>DiscardCouplingSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>589fd3a0-0a30-4fe2-8fb5-af4ed6b23bbf</id>
+    </Compile>
+    <Compile Include="TC\DiscardCouplingSelection.UserCode.cs">
+      <BoundTo>9f1e47be-90eb-4a83-b3f9-9973c65eb53e</BoundTo>
+      <DependentUpon>DiscardCouplingSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ff0bedb-0670-4ec5-b3a0-f74ba32f679e</id>
+    </Compile>
+    <Compile Include="TC\DuplicateCustomer.cs">
+      <BoundTo>ecdeaa05-9eb5-469e-99fc-4af8d87e0c8c</BoundTo>
+      <DependentUpon>DuplicateCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aee29407-423f-408d-9e75-e49b1cad6c60</id>
+    </Compile>
+    <Compile Include="TC\DuplicateCustomer.UserCode.cs">
+      <BoundTo>ecdeaa05-9eb5-469e-99fc-4af8d87e0c8c</BoundTo>
+      <DependentUpon>DuplicateCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e34b3549-88bc-4ec6-b268-cabe0da7fd0e</id>
+    </Compile>
+    <Compile Include="TC\EditingAudiogram.cs">
+      <BoundTo>445bb066-22bb-4629-901e-956b5ed8a818</BoundTo>
+      <DependentUpon>EditingAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a9a2ddf-f180-43b6-bf30-5a2efbe5f546</id>
+    </Compile>
+    <Compile Include="TC\EditingAudiogram.UserCode.cs">
+      <BoundTo>445bb066-22bb-4629-901e-956b5ed8a818</BoundTo>
+      <DependentUpon>EditingAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b8a38d3-75cc-41a4-89f9-42c1fcd3dc4d</id>
+    </Compile>
+    <Compile Include="TC\EditingExistingCustomer.cs">
+      <BoundTo>7924e195-f625-4e03-81b9-732bf91a5fed</BoundTo>
+      <DependentUpon>EditingExistingCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc01e1eb-1cf8-4a0a-ad7f-3a830424e26a</id>
+    </Compile>
+    <Compile Include="TC\EditingExistingCustomer.UserCode.cs">
+      <BoundTo>7924e195-f625-4e03-81b9-732bf91a5fed</BoundTo>
+      <DependentUpon>EditingExistingCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>88077e1e-5ee2-4f06-a103-f7d8426194d4</id>
+    </Compile>
+    <Compile Include="TC\EnablingDisabling.cs">
+      <BoundTo>27e853ee-1043-456a-92ea-8a583970558f</BoundTo>
+      <DependentUpon>EnablingDisabling.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a358f76d-a17e-45ae-a9c0-254366542988</id>
+    </Compile>
+    <Compile Include="TC\EnablingDisabling.UserCode.cs">
+      <BoundTo>27e853ee-1043-456a-92ea-8a583970558f</BoundTo>
+      <DependentUpon>EnablingDisabling.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c426615b-ec31-4162-ae5f-16186047e863</id>
+    </Compile>
+    <Compile Include="TC\EnterAudiogramCancel.cs">
+      <BoundTo>3a9786f7-9476-4bf2-a6af-0b733cd1defc</BoundTo>
+      <DependentUpon>EnterAudiogramCancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dc1c858-e2d5-4f2a-b0ad-62ccc38e5fb6</id>
+    </Compile>
+    <Compile Include="TC\EnterAudiogramCancel.UserCode.cs">
+      <BoundTo>3a9786f7-9476-4bf2-a6af-0b733cd1defc</BoundTo>
+      <DependentUpon>EnterAudiogramCancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c874535e-540b-4ff1-a71f-83f549b6571b</id>
+    </Compile>
+    <Compile Include="TC\EnterAudiogramSave.cs">
+      <BoundTo>fee25cb7-65c3-449c-a248-4ed225adbc74</BoundTo>
+      <DependentUpon>EnterAudiogramSave.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ddcd6890-76d4-46cd-9b6d-5c837d9e14a8</id>
+    </Compile>
+    <Compile Include="TC\EnterAudiogramSave.UserCode.cs">
+      <BoundTo>fee25cb7-65c3-449c-a248-4ed225adbc74</BoundTo>
+      <DependentUpon>EnterAudiogramSave.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>abd01ab0-9af3-4197-9f60-50c18f3beb03</id>
+    </Compile>
+    <Compile Include="TC\EnterValidationCodeDone.cs">
+      <BoundTo>99e166cf-6714-4b9f-ae2e-f00d75aa7bd5</BoundTo>
+      <DependentUpon>EnterValidationCodeDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>817a326b-6bdc-46a0-a72a-499e49f3e107</id>
+    </Compile>
+    <Compile Include="TC\EnterValidationCodeDone.UserCode.cs">
+      <BoundTo>99e166cf-6714-4b9f-ae2e-f00d75aa7bd5</BoundTo>
+      <DependentUpon>EnterValidationCodeDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7fad0baf-3b59-4d1d-8bea-0dac977a53dd</id>
+    </Compile>
+    <Compile Include="TC\FAQ.cs">
+      <BoundTo>60fbeddd-e406-4085-aacf-31c1a5e6803c</BoundTo>
+      <DependentUpon>FAQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>66583a0a-8123-47fd-b27e-f94bc381eec8</id>
+    </Compile>
+    <Compile Include="TC\FAQ.UserCode.cs">
+      <BoundTo>60fbeddd-e406-4085-aacf-31c1a5e6803c</BoundTo>
+      <DependentUpon>FAQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e9f0321-6480-47ed-a2be-518532663ce9</id>
+    </Compile>
+    <Compile Include="TC\FirstTimeLaunch.cs">
+      <BoundTo>d0f90ef1-8dd8-4553-8112-dcf2819a6d37</BoundTo>
+      <DependentUpon>FirstTimeLaunch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f32c0f24-6972-49f4-9a32-564aeb1df6ae</id>
+    </Compile>
+    <Compile Include="TC\FirstTimeLaunch.UserCode.cs">
+      <BoundTo>d0f90ef1-8dd8-4553-8112-dcf2819a6d37</BoundTo>
+      <DependentUpon>FirstTimeLaunch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfe217e7-bca2-4e18-8d90-c17fed27bac9</id>
+    </Compile>
+    <Compile Include="TC\HighCluster.cs">
+      <BoundTo>343b307b-90d4-478d-9ee9-4c1c574e2a59</BoundTo>
+      <DependentUpon>HighCluster.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>98ac7824-9610-4e61-9345-3324d2d02439</id>
+    </Compile>
+    <Compile Include="TC\HighCluster.UserCode.cs">
+      <BoundTo>343b307b-90d4-478d-9ee9-4c1c574e2a59</BoundTo>
+      <DependentUpon>HighCluster.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0bb839a1-c3e5-4ed8-9808-2ee625af2fd6</id>
+    </Compile>
+    <Compile Include="TC\Imprint.cs">
+      <BoundTo>ddc8d0ec-d2f8-480f-959c-e9a1fd34c75f</BoundTo>
+      <DependentUpon>Imprint.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8d5f030-b6c4-4674-ad9c-785e977a5123</id>
+    </Compile>
+    <Compile Include="TC\Imprint.UserCode.cs">
+      <BoundTo>ddc8d0ec-d2f8-480f-959c-e9a1fd34c75f</BoundTo>
+      <DependentUpon>Imprint.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c3297ded-765c-4bc0-a201-b3a8ada8616c</id>
+    </Compile>
+    <Compile Include="TC\InsufficientAudiEntry.cs">
+      <BoundTo>6934eb18-6c29-4914-96b8-29f462341ba2</BoundTo>
+      <DependentUpon>InsufficientAudiEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e6d1a2c1-f744-406e-b69c-c506ecd0a83b</id>
+    </Compile>
+    <Compile Include="TC\InsufficientAudiEntry.UserCode.cs">
+      <BoundTo>6934eb18-6c29-4914-96b8-29f462341ba2</BoundTo>
+      <DependentUpon>InsufficientAudiEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a345879-a7eb-432e-8596-fc21af8a8b5d</id>
+    </Compile>
+    <Compile Include="TC\InterfaceLanguages.cs">
+      <DependentUpon>InterfaceLanguages.rxrec</DependentUpon>
+      <id>acf2f7b9-9f5a-496e-bf13-7cf92494b49d</id>
+      <BoundTo>f6cbf91f-392d-45d8-9b2c-f07fc709b9a9</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="TC\InterfaceLanguages.UserCode.cs">
+      <DependentUpon>InterfaceLanguages.rxrec</DependentUpon>
+      <id>c6df54d3-7fe3-4712-bfa5-625cf50e7491</id>
+      <BoundTo>f6cbf91f-392d-45d8-9b2c-f07fc709b9a9</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="TC\MedicalInfo.cs">
+      <BoundTo>85c4de9e-2ec1-4dc4-a95b-4e7d596b870e</BoundTo>
+      <DependentUpon>MedicalInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1edf4c6-61f6-4acd-843b-8deed755cd79</id>
+    </Compile>
+    <Compile Include="TC\MedicalInfo.UserCode.cs">
+      <BoundTo>85c4de9e-2ec1-4dc4-a95b-4e7d596b870e</BoundTo>
+      <DependentUpon>MedicalInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c272ae65-891b-430a-a7fc-511a470c2cab</id>
+    </Compile>
+    <Compile Include="TC\MonauralFlowRecommendationGiven.cs">
+      <BoundTo>20161c6e-63f3-4b25-ac61-a0f12d5a7921</BoundTo>
+      <DependentUpon>MonauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e323963-cc52-4bbe-b794-5a3519604bb1</id>
+    </Compile>
+    <Compile Include="TC\MonauralFlowRecommendationGiven.UserCode.cs">
+      <BoundTo>20161c6e-63f3-4b25-ac61-a0f12d5a7921</BoundTo>
+      <DependentUpon>MonauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8848cd1e-f836-42a5-8cce-ef12abdd1664</id>
+    </Compile>
+    <Compile Include="TC\MonauralFlowRecommendationNotGiven.cs">
+      <BoundTo>2bc0a087-85ed-4079-a8cd-aa90bd947bae</BoundTo>
+      <DependentUpon>MonauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ae26b9f-ebbb-4b66-a62c-5770ed61659a</id>
+    </Compile>
+    <Compile Include="TC\MonauralFlowRecommendationNotGiven.UserCode.cs">
+      <BoundTo>2bc0a087-85ed-4079-a8cd-aa90bd947bae</BoundTo>
+      <DependentUpon>MonauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>74582b8f-f85b-4351-9ddb-88471bf2e10a</id>
+    </Compile>
+    <Compile Include="TC\NewCustomerWithAudiogram.cs">
+      <BoundTo>647032c2-6937-4329-bd3e-b4376f0a047d</BoundTo>
+      <DependentUpon>NewCustomerWithAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>200279b0-1887-4b17-8397-bbb1af831b25</id>
+    </Compile>
+    <Compile Include="TC\NewCustomerWithAudiogram.UserCode.cs">
+      <BoundTo>647032c2-6937-4329-bd3e-b4376f0a047d</BoundTo>
+      <DependentUpon>NewCustomerWithAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>495af9c3-4723-4b62-a2d1-393f0745745b</id>
+    </Compile>
+    <Compile Include="TC\NewCustomerWithoutAudiogram.cs">
+      <BoundTo>f8b6aaa4-3dff-4093-bc55-1e3f3ad29a4f</BoundTo>
+      <DependentUpon>NewCustomerWithoutAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f544c11a-458e-4e52-a54e-b74c1399a8d3</id>
+    </Compile>
+    <Compile Include="TC\NewCustomerWithoutAudiogram.UserCode.cs">
+      <BoundTo>f8b6aaa4-3dff-4093-bc55-1e3f3ad29a4f</BoundTo>
+      <DependentUpon>NewCustomerWithoutAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5ef37569-2fc9-4d63-90e5-e7e1494d75d3</id>
+    </Compile>
+    <Compile Include="TC\OverRidingRecommendationHIAndCluster.cs">
+      <BoundTo>5d0ecd92-1159-4cc3-bf36-dbb3d9f60c73</BoundTo>
+      <DependentUpon>OverRidingRecommendationHIAndCluster.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>89a779d7-03a3-4aaa-a34b-7fbb42b3d7bc</id>
+    </Compile>
+    <Compile Include="TC\OverRidingRecommendationHIAndCluster.UserCode.cs">
+      <BoundTo>5d0ecd92-1159-4cc3-bf36-dbb3d9f60c73</BoundTo>
+      <DependentUpon>OverRidingRecommendationHIAndCluster.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8b8dbd8-9c37-4c84-aa6b-6d7f05857441</id>
+    </Compile>
+    <Compile Include="TC\PasscodeTest.cs">
+      <BoundTo>734ebc2d-9656-45d1-a3fb-05f60440f5c3</BoundTo>
+      <DependentUpon>PasscodeTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d7dfbf0-4ebb-47f8-b7bc-5947ec62b22b</id>
+    </Compile>
+    <Compile Include="TC\PasscodeTest.UserCode.cs">
+      <BoundTo>734ebc2d-9656-45d1-a3fb-05f60440f5c3</BoundTo>
+      <DependentUpon>PasscodeTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28473a66-42b3-4266-b192-44c763caa373</id>
+    </Compile>
+    <Compile Include="TC\PreFilledRecommendation.cs">
+      <BoundTo>116a2df5-5c3a-4fa6-91ff-9554770b991b</BoundTo>
+      <DependentUpon>PrefilledRecommendation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b168830b-b050-4b73-b4de-26318d2c5e65</id>
+    </Compile>
+    <Compile Include="TC\PreFilledRecommendation.UserCode.cs">
+      <BoundTo>116a2df5-5c3a-4fa6-91ff-9554770b991b</BoundTo>
+      <DependentUpon>PrefilledRecommendation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>940dde98-551b-4c50-830b-a5b2e7982c90</id>
+    </Compile>
+    <Compile Include="TC\RecommendationForDeviceSelection.cs">
+      <BoundTo>40692027-6b54-4603-814e-932064b7866e</BoundTo>
+      <DependentUpon>RecommendationForDeviceSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f241591-deee-4280-96db-bd1e3a54b46c</id>
+    </Compile>
+    <Compile Include="TC\RecommendationForDeviceSelection.UserCode.cs">
+      <BoundTo>40692027-6b54-4603-814e-932064b7866e</BoundTo>
+      <DependentUpon>RecommendationForDeviceSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d5bf86e5-7192-4afd-a95f-e43751fc8431</id>
+    </Compile>
+    <Compile Include="TC\RecommendationOfHIsWithAudiogram.cs">
+      <BoundTo>9f385330-11c8-4655-b86c-246146e0820d</BoundTo>
+      <DependentUpon>RecommendationOfHIsWithAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ba68173-ed4a-47d3-b2c5-e18672f15ab7</id>
+    </Compile>
+    <Compile Include="TC\RecommendationOfHIsWithAudiogram.UserCode.cs">
+      <BoundTo>9f385330-11c8-4655-b86c-246146e0820d</BoundTo>
+      <DependentUpon>RecommendationOfHIsWithAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4fb2565c-97fd-492a-80e7-e53c370d52d4</id>
+    </Compile>
+    <Compile Include="TC\RecommendationOfHIsWithoutAudiogram.cs">
+      <BoundTo>c76e7ff6-ab4c-44f2-b27a-39f70447d8fd</BoundTo>
+      <DependentUpon>RecommendationOfHIsWithoutAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e14c6b57-c6eb-492f-9bf1-ecd1d992f0c2</id>
+    </Compile>
+    <Compile Include="TC\RecommendationOfHIsWithoutAudiogram.UserCode.cs">
+      <BoundTo>c76e7ff6-ab4c-44f2-b27a-39f70447d8fd</BoundTo>
+      <DependentUpon>RecommendationOfHIsWithoutAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76c65510-4ee3-4cdf-bc96-b6a34d5cf0c9</id>
+    </Compile>
+    <Compile Include="TC\TabBetterEarSide.cs">
+      <BoundTo>c0a45a59-164e-4b3a-87b8-ba8999b28916</BoundTo>
+      <DependentUpon>TabBetterEarSide.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6074bab3-57cb-4102-9ae8-eba6ea8819d6</id>
+    </Compile>
+    <Compile Include="TC\TabBetterEarSide.UserCode.cs">
+      <BoundTo>c0a45a59-164e-4b3a-87b8-ba8999b28916</BoundTo>
+      <DependentUpon>TabBetterEarSide.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfb83166-0fe7-4a4d-8240-60132439849c</id>
+    </Compile>
+    <Compile Include="TC\TabClusterInstantRunP.cs">
+      <BoundTo>306846d3-f04b-4e3e-a78a-5423e4f06ca0</BoundTo>
+      <DependentUpon>TabClusterInstantRunP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>764fd75a-f2ea-4f67-9bc0-9a7593599779</id>
+    </Compile>
+    <Compile Include="TC\TabClusterInstantRunP.UserCode.cs">
+      <BoundTo>306846d3-f04b-4e3e-a78a-5423e4f06ca0</BoundTo>
+      <DependentUpon>TabClusterInstantRunP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0750b153-6d3b-4a98-ab0d-077ef3d859b0</id>
+    </Compile>
+    <Compile Include="TC\TabCodeValidation.cs">
+      <BoundTo>3a4991cd-d52e-4e75-aefd-1bc17e39ea68</BoundTo>
+      <DependentUpon>TabCodeValidation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7537b9e6-8532-4f63-9898-bc77ac1b27cd</id>
+    </Compile>
+    <Compile Include="TC\TabCodeValidation.UserCode.cs">
+      <BoundTo>3a4991cd-d52e-4e75-aefd-1bc17e39ea68</BoundTo>
+      <DependentUpon>TabCodeValidation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>903c92f6-2231-4495-acd8-383ccbd4c0fc</id>
+    </Compile>
+    <Compile Include="TC\TabDeletingAudiogramPoints.cs">
+      <BoundTo>1a71e456-f090-4075-813f-f5d93603da0a</BoundTo>
+      <DependentUpon>TabDeletingAudiogramPoints.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eb9cea08-4de9-4341-a627-2d81b77f6b37</id>
+    </Compile>
+    <Compile Include="TC\TabDeletingAudiogramPoints.UserCode.cs">
+      <BoundTo>1a71e456-f090-4075-813f-f5d93603da0a</BoundTo>
+      <DependentUpon>TabDeletingAudiogramPoints.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f90df82-2f62-4eac-a64c-d2edb113bcce</id>
+    </Compile>
+    <Compile Include="TC\TabDeletingCompleteAudiogram.cs">
+      <BoundTo>019bc22f-a36f-4cc7-9cd4-72bf5f93db15</BoundTo>
+      <DependentUpon>TabDeletingCompleteAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5cce9e7a-ec2b-49a0-b18f-ccb40a04cb74</id>
+    </Compile>
+    <Compile Include="TC\TabDeletingCompleteAudiogram.UserCode.cs">
+      <BoundTo>019bc22f-a36f-4cc7-9cd4-72bf5f93db15</BoundTo>
+      <DependentUpon>TabDeletingCompleteAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aebd7ce9-a5b9-40f0-85b9-a8f1da125f90</id>
+    </Compile>
+    <Compile Include="TC\TabDiscardCouplingSelection.cs">
+      <BoundTo>de1f0606-88b8-4bb5-8a0e-abdc39fd09be</BoundTo>
+      <DependentUpon>TabDiscardCouplingSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9287002-2a0e-4579-987d-8658f31aaaac</id>
+    </Compile>
+    <Compile Include="TC\TabDiscardCouplingSelection.UserCode.cs">
+      <BoundTo>de1f0606-88b8-4bb5-8a0e-abdc39fd09be</BoundTo>
+      <DependentUpon>TabDiscardCouplingSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e235ee56-a293-4517-9b56-ba5e7502a61a</id>
+    </Compile>
+    <Compile Include="TC\TabEditingAudiogram.cs">
+      <BoundTo>123a9b21-f52d-4568-9e07-5b08d908e484</BoundTo>
+      <DependentUpon>TabEditingAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cac041b-ae46-4f41-84d7-a67c05e80ff2</id>
+    </Compile>
+    <Compile Include="TC\TabEditingAudiogram.UserCode.cs">
+      <BoundTo>123a9b21-f52d-4568-9e07-5b08d908e484</BoundTo>
+      <DependentUpon>TabEditingAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>084a50ac-37d3-4807-8e1f-4367cd9e5f21</id>
+    </Compile>
+    <Compile Include="TC\TabEnterAudiogramSave.cs">
+      <BoundTo>05fa3870-fb01-45fc-b0b1-edd65ebdf0c2</BoundTo>
+      <DependentUpon>TabEnterAudiogramSave.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e2aea6af-4d41-44c5-b14b-ec29ff245b81</id>
+    </Compile>
+    <Compile Include="TC\TabEnterAudiogramSave.UserCode.cs">
+      <BoundTo>05fa3870-fb01-45fc-b0b1-edd65ebdf0c2</BoundTo>
+      <DependentUpon>TabEnterAudiogramSave.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0634ec4a-f60c-4164-87b2-72f112b8754b</id>
+    </Compile>
+    <Compile Include="TC\TabEnterValidationCodeDone.cs">
+      <BoundTo>014e5d09-be4f-475c-a18a-368e4dfd9541</BoundTo>
+      <DependentUpon>TabEnterValidationCodeDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa0fce68-dbe8-4905-be29-6e79f859c9f5</id>
+    </Compile>
+    <Compile Include="TC\TabEnterValidationCodeDone.UserCode.cs">
+      <BoundTo>014e5d09-be4f-475c-a18a-368e4dfd9541</BoundTo>
+      <DependentUpon>TabEnterValidationCodeDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>56c1239b-c5ba-4acf-8fe8-be54cf2a4745</id>
+    </Compile>
+    <Compile Include="TC\TabHighCluster.cs">
+      <BoundTo>be67b7db-13cd-4758-bfbc-5dbc532253e6</BoundTo>
+      <DependentUpon>TabHighCluster.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a053c688-a1f5-485e-ba28-a14dacba8ce5</id>
+    </Compile>
+    <Compile Include="TC\TabHighCluster.UserCode.cs">
+      <BoundTo>be67b7db-13cd-4758-bfbc-5dbc532253e6</BoundTo>
+      <DependentUpon>TabHighCluster.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1440c749-0e23-4dca-bab0-5e0a804dc5be</id>
+    </Compile>
+    <Compile Include="TC\TabMonauralFlowRecommendationGiven.cs">
+      <BoundTo>4365a1c9-4fa1-4548-ba15-e2b6a1e42ecf</BoundTo>
+      <DependentUpon>TabMonauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81767d62-aeab-4d58-bd76-dc4dfe2317b3</id>
+    </Compile>
+    <Compile Include="TC\TabMonauralFlowRecommendationGiven.UserCode.cs">
+      <BoundTo>4365a1c9-4fa1-4548-ba15-e2b6a1e42ecf</BoundTo>
+      <DependentUpon>TabMonauralFlowRecommendationGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e7db9ae-9852-4397-b77e-67fa3ccfac2d</id>
+    </Compile>
+    <Compile Include="TC\TabMonauralFlowRecommendationNotGiven.cs">
+      <BoundTo>c6f2bba6-2b5e-47c0-982f-92487ccf519f</BoundTo>
+      <DependentUpon>TabMonauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ed1d9d5a-bd26-4d8d-9842-74c7428e7e79</id>
+    </Compile>
+    <Compile Include="TC\TabMonauralFlowRecommendationNotGiven.UserCode.cs">
+      <BoundTo>c6f2bba6-2b5e-47c0-982f-92487ccf519f</BoundTo>
+      <DependentUpon>TabMonauralFlowRecommendationNotGiven.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>85d4941c-a9ea-4be4-a1b1-67565c4c6b0a</id>
+    </Compile>
+    <Compile Include="TC\TabOverRidingRecommendationHIAndCluster.cs">
+      <BoundTo>acb2fbe5-0d8d-4e95-af2d-a4eccd74172c</BoundTo>
+      <DependentUpon>TabOverRidingRecommendationHIAndCluster.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>00c750e8-de7d-499c-810c-cf3a6acc5bf6</id>
+    </Compile>
+    <Compile Include="TC\TabOverRidingRecommendationHIAndCluster.UserCode.cs">
+      <BoundTo>acb2fbe5-0d8d-4e95-af2d-a4eccd74172c</BoundTo>
+      <DependentUpon>TabOverRidingRecommendationHIAndCluster.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb796042-5f8d-4e81-b1f4-e0f8069b1a67</id>
+    </Compile>
+    <Compile Include="TC\TabPreFilledRecommendation.cs">
+      <BoundTo>abf3fd1c-6458-4d61-b1f0-7b9fcc18ff6c</BoundTo>
+      <DependentUpon>TabPreFilledRecommendation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90fecf28-767a-4987-8c22-6d053c080562</id>
+    </Compile>
+    <Compile Include="TC\TabPreFilledRecommendation.UserCode.cs">
+      <BoundTo>abf3fd1c-6458-4d61-b1f0-7b9fcc18ff6c</BoundTo>
+      <DependentUpon>TabPreFilledRecommendation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6491aa25-c283-45f6-a33f-7e0190ad3999</id>
+    </Compile>
+    <Compile Include="TC\TabRecommendationForDeviceSelection.cs">
+      <BoundTo>775c3fff-0611-4618-ad50-b3f00dd68616</BoundTo>
+      <DependentUpon>TabRecommendationForDeviceSelection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>75be6131-bd37-4c0f-8a75-0971df455947</id>
+    </Compile>
+    <Compile Include="TC\TabRecommendationForDeviceSelection.UserCode.cs">
+      <BoundTo>775c3fff-0611-4618-ad50-b3f00dd68616</BoundTo>
+      <DependentUpon>TabRecommendationForDeviceSelection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de146733-1f59-44fe-973e-1a0db2441682</id>
+    </Compile>
+    <Compile Include="TC\TabStartUpEntryScreen.cs">
+      <BoundTo>ad45acab-960a-4d83-9914-16e1c0e90ada</BoundTo>
+      <DependentUpon>TabStartUpEntryScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bd85982f-3bd1-404f-bc21-c92e2b27dbf0</id>
+    </Compile>
+    <Compile Include="TC\TabStartUpEntryScreen.UserCode.cs">
+      <BoundTo>ad45acab-960a-4d83-9914-16e1c0e90ada</BoundTo>
+      <DependentUpon>TabStartUpEntryScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8587e4da-5b41-4094-ba34-9e8f8255f251</id>
+    </Compile>
+    <Compile Include="TC\TabNewCustomerWithAudiogram.cs">
+      <BoundTo>15c1137c-851c-491f-94f4-a5753d2e120b</BoundTo>
+      <DependentUpon>TabNewCustomerWithAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5221992d-be10-43e7-89f8-7f2577942bd2</id>
+    </Compile>
+    <Compile Include="TC\TabNewCustomerWithAudiogram.UserCode.cs">
+      <BoundTo>15c1137c-851c-491f-94f4-a5753d2e120b</BoundTo>
+      <DependentUpon>TabNewCustomerWithAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0aea2d3c-6397-4c34-80ba-89eaf4fa733c</id>
+    </Compile>
+    <Compile Include="TC\TabAppInfo.cs">
+      <BoundTo>7dfe1a20-f3b6-4542-90eb-56288f17e389</BoundTo>
+      <DependentUpon>TabAppInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b484fe8-a63b-4de8-b734-92b794591c21</id>
+    </Compile>
+    <Compile Include="TC\TabAppInfo.UserCode.cs">
+      <BoundTo>7dfe1a20-f3b6-4542-90eb-56288f17e389</BoundTo>
+      <DependentUpon>TabAppInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0f49d7a5-32af-48be-bb89-0e9b0598cc90</id>
+    </Compile>
+    <Compile Include="TC\TabAppVersion.cs">
+      <BoundTo>7d3b9650-e2ac-4f77-977a-82d17475a24b</BoundTo>
+      <DependentUpon>TabAppVersion.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>753a4e6c-9086-4202-9be7-0063daf667db</id>
+    </Compile>
+    <Compile Include="TC\TabAppVersion.UserCode.cs">
+      <BoundTo>7d3b9650-e2ac-4f77-977a-82d17475a24b</BoundTo>
+      <DependentUpon>TabAppVersion.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f735af14-c075-452f-98d1-3a26edeac53f</id>
+    </Compile>
+    <Compile Include="TC\TabFAQ.cs">
+      <BoundTo>f32f5a8f-fce0-4061-8404-9327c20d62b7</BoundTo>
+      <DependentUpon>TabFAQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ac6f6ef-004d-4755-823e-3b19eedb7d4c</id>
+    </Compile>
+    <Compile Include="TC\TabFAQ.UserCode.cs">
+      <BoundTo>f32f5a8f-fce0-4061-8404-9327c20d62b7</BoundTo>
+      <DependentUpon>TabFAQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9433879e-1bf2-4b00-ab9d-6295f6ed41fc</id>
+    </Compile>
+    <Compile Include="TC\TabImprint.cs">
+      <BoundTo>abcdb5a9-0310-4857-8166-35d7d234642c</BoundTo>
+      <DependentUpon>TabImprint.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b7d9464d-5438-462b-b165-f359625fdf81</id>
+    </Compile>
+    <Compile Include="TC\TabImprint.UserCode.cs">
+      <BoundTo>abcdb5a9-0310-4857-8166-35d7d234642c</BoundTo>
+      <DependentUpon>TabImprint.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bf347202-3d45-4549-9585-217fe66138b1</id>
+    </Compile>
+    <Compile Include="TC\TabMedicalInfo.cs">
+      <BoundTo>058549a1-e5d6-4847-ba50-63b67290bb0b</BoundTo>
+      <DependentUpon>TabMedicalInfo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4eab349a-258f-4a24-aa98-0b9891fca0c8</id>
+    </Compile>
+    <Compile Include="TC\TabMedicalInfo.UserCode.cs">
+      <BoundTo>058549a1-e5d6-4847-ba50-63b67290bb0b</BoundTo>
+      <DependentUpon>TabMedicalInfo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9a237be-fec5-47be-a9bf-3be029c159fb</id>
+    </Compile>
+    <Compile Include="TC\TabNewCustomerWithoutAudiogram.cs">
+      <BoundTo>363656a6-68e3-4707-8591-029318118cfb</BoundTo>
+      <DependentUpon>TabNewCustomerWithoutAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6f9d3264-a062-4ba4-8dab-baee686e6825</id>
+    </Compile>
+    <Compile Include="TC\TabNewCustomerWithoutAudiogram.UserCode.cs">
+      <BoundTo>363656a6-68e3-4707-8591-029318118cfb</BoundTo>
+      <DependentUpon>TabNewCustomerWithoutAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76f47b03-bd4f-41f7-84f2-98a7fbfbf178</id>
+    </Compile>
+    <Compile Include="TC\TabStartTheAppAfterInitialSetupDone.cs">
+      <BoundTo>aab2f1c7-8c15-42be-9400-c1a91d8f64cc</BoundTo>
+      <DependentUpon>TabStartTheAppAfterInitialSetupDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae992d59-467d-43e7-b090-2f6c8223d9ce</id>
+    </Compile>
+    <Compile Include="TC\TabStartTheAppAfterInitialSetupDone.UserCode.cs">
+      <BoundTo>aab2f1c7-8c15-42be-9400-c1a91d8f64cc</BoundTo>
+      <DependentUpon>TabStartTheAppAfterInitialSetupDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9071dab-6bdf-4b35-81c7-a04dd84545ba</id>
+    </Compile>
+    <Compile Include="TC\TabFirstTimeLaunch.cs">
+      <BoundTo>d4342d58-ed9f-4136-8094-38ae1eae5148</BoundTo>
+      <DependentUpon>TabFirstTimeLaunch.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29cf6cc1-ef09-45bc-9179-d4ed36de863e</id>
+    </Compile>
+    <Compile Include="TC\TabFirstTimeLaunch.UserCode.cs">
+      <BoundTo>d4342d58-ed9f-4136-8094-38ae1eae5148</BoundTo>
+      <DependentUpon>TabFirstTimeLaunch.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acfc1067-6fd3-462c-9cf0-48210d3855cc</id>
+    </Compile>
+    <Compile Include="TC\TabEnablingDisabling.cs">
+      <BoundTo>99a90840-18e2-4fc6-94d4-790c80fb1567</BoundTo>
+      <DependentUpon>TabEnablingDisabling.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0be7978a-7d1b-4887-a912-48d319e93693</id>
+    </Compile>
+    <Compile Include="TC\TabEnablingDisabling.UserCode.cs">
+      <BoundTo>99a90840-18e2-4fc6-94d4-790c80fb1567</BoundTo>
+      <DependentUpon>TabEnablingDisabling.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>188ef171-73fd-416f-b050-435238ff861e</id>
+    </Compile>
+    <Compile Include="TC\StartTheAppAfterInitialSetupDone.cs">
+      <BoundTo>53987bc6-8a5b-49b8-bb16-dcf4dfed04ad</BoundTo>
+      <DependentUpon>StartTheAppAfterInitialSetupDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73f70a73-a3d5-4dba-a306-353af409d34f</id>
+    </Compile>
+    <Compile Include="TC\StartTheAppAfterInitialSetupDone.UserCode.cs">
+      <BoundTo>53987bc6-8a5b-49b8-bb16-dcf4dfed04ad</BoundTo>
+      <DependentUpon>StartTheAppAfterInitialSetupDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2add8726-2cef-499e-ba8e-d2b2f8cd72fd</id>
+    </Compile>
+    <Compile Include="TC\StartUpEntryScreen.cs">
+      <BoundTo>caec9b2f-dff0-46d8-bdcd-f068a9f9e3b9</BoundTo>
+      <DependentUpon>StartUpEntryScreen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>816be7dc-6e8b-42cb-84dd-99d6389d97a1</id>
+    </Compile>
+    <Compile Include="TC\StartUpEntryScreen.UserCode.cs">
+      <BoundTo>caec9b2f-dff0-46d8-bdcd-f068a9f9e3b9</BoundTo>
+      <DependentUpon>StartUpEntryScreen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>106f45c1-6330-454e-8a36-0008f38a0ae3</id>
+    </Compile>
+    <Compile Include="TC\SwipeToDeleteCustomer.cs">
+      <BoundTo>bb2bb089-96f0-4400-b062-c9b1827841ad</BoundTo>
+      <DependentUpon>SwipeToDeleteCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b6253047-20f2-4cfb-b6b8-163d37f415bc</id>
+    </Compile>
+    <Compile Include="TC\SwipeToDeleteCustomer.UserCode.cs">
+      <BoundTo>bb2bb089-96f0-4400-b062-c9b1827841ad</BoundTo>
+      <DependentUpon>SwipeToDeleteCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8d289d0d-4382-4528-a136-fe4e66c35a0d</id>
+    </Compile>
+    <Compile Include="TC\TabContinueWorkFlow.cs">
+      <BoundTo>26d3a13b-4172-41d7-b3d3-90934961f426</BoundTo>
+      <DependentUpon>TabContinueWorkFlow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>277d93cd-04c5-482d-a1b5-d333e99c3a7d</id>
+    </Compile>
+    <Compile Include="TC\TabContinueWorkFlow.UserCode.cs">
+      <BoundTo>26d3a13b-4172-41d7-b3d3-90934961f426</BoundTo>
+      <DependentUpon>TabContinueWorkFlow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4cbe419d-dcb9-426d-b13e-1d674037d487</id>
+    </Compile>
+    <Compile Include="TC\TabDeletingCustomer.cs">
+      <DependentUpon>TabDeletingCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c90083a-c71c-4e0f-a78d-7db73457b495</id>
+      <BoundTo>64469299-7fc4-45d4-aa3b-332379c2ad18</BoundTo>
+    </Compile>
+    <Compile Include="TC\TabDeletingCustomer.UserCode.cs">
+      <DependentUpon>TabDeletingCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>732b2b41-7179-4ae3-bb20-e34f86708fd2</id>
+      <BoundTo>64469299-7fc4-45d4-aa3b-332379c2ad18</BoundTo>
+    </Compile>
+    <Compile Include="TC\TabDuplicateCustomers.cs">
+      <BoundTo>8b88c07b-8e67-43d6-a935-479aacbaaa74</BoundTo>
+      <DependentUpon>TabDuplicateCustomers.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>160683f4-a0b5-4d88-8938-980644ed6bc7</id>
+    </Compile>
+    <Compile Include="TC\TabDuplicateCustomers.UserCode.cs">
+      <BoundTo>8b88c07b-8e67-43d6-a935-479aacbaaa74</BoundTo>
+      <DependentUpon>TabDuplicateCustomers.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>81984bba-fd62-4ccc-8cbb-21aeae5fc6e7</id>
+    </Compile>
+    <Compile Include="TC\TabEditingExistingCustomer.cs">
+      <BoundTo>883bbb9f-d73f-46f4-ad85-6f8b307454ce</BoundTo>
+      <DependentUpon>TabEditingExistingCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>edfa636f-40ea-4a90-9bbb-47aa2373da9b</id>
+    </Compile>
+    <Compile Include="TC\TabEditingExistingCustomer.UserCode.cs">
+      <BoundTo>883bbb9f-d73f-46f4-ad85-6f8b307454ce</BoundTo>
+      <DependentUpon>TabEditingExistingCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23ce9ca6-ac4c-4d3b-b21f-036d242c7e22</id>
+    </Compile>
+    <Compile Include="TC\TabEnterAudiogramCancel.cs">
+      <BoundTo>e077e44c-3242-4c7e-b113-56bb67de310a</BoundTo>
+      <DependentUpon>TabEnterAudiogramCancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fef0c9f-cecd-460c-9203-7eb04a6b3ada</id>
+    </Compile>
+    <Compile Include="TC\TabEnterAudiogramCancel.UserCode.cs">
+      <BoundTo>e077e44c-3242-4c7e-b113-56bb67de310a</BoundTo>
+      <DependentUpon>TabEnterAudiogramCancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6d55321b-889c-4561-a526-d88660fe60d7</id>
+    </Compile>
+    <Compile Include="TC\TabInsufficientAudiEntry.cs">
+      <BoundTo>74eb56b2-fc73-45ff-bd66-6558e722adc7</BoundTo>
+      <DependentUpon>TabInsufficientAudiEntry.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50f78b94-9425-4f97-908a-d60ed00bfb15</id>
+    </Compile>
+    <Compile Include="TC\TabInsufficientAudiEntry.UserCode.cs">
+      <BoundTo>74eb56b2-fc73-45ff-bd66-6558e722adc7</BoundTo>
+      <DependentUpon>TabInsufficientAudiEntry.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0947317b-bcb5-4a38-bf86-9d9266e4b534</id>
+    </Compile>
+    <Compile Include="TC\TabRecommendationOfHIsWithAudiogram.cs">
+      <BoundTo>0ccee61c-0afd-45c2-9de6-5078b26d8c87</BoundTo>
+      <DependentUpon>TabRecommendationOfHIsWithAudiogram.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fbe6a11e-8145-47bc-8181-9c88a64501cf</id>
+    </Compile>
+    <Compile Include="TC\TabRecommendationOfHIsWithAudiogram.UserCode.cs">
+      <BoundTo>0ccee61c-0afd-45c2-9de6-5078b26d8c87</BoundTo>
+      <DependentUpon>TabRecommendationOfHIsWithAudiogram.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf97b626-8437-4608-980d-5d5aa23ece48</id>
+    </Compile>
+    <Compile Include="TC\TabSwipeToDeletCustomer.cs">
+      <BoundTo>7c1f2e64-a777-42c9-960e-9e982ec88ec3</BoundTo>
+      <DependentUpon>TabSwipeToDeletCustomer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f8adb1c4-9a65-4fd3-ae9a-2950257b9255</id>
+    </Compile>
+    <Compile Include="TC\TabSwipeToDeletCustomer.UserCode.cs">
+      <BoundTo>7c1f2e64-a777-42c9-960e-9e982ec88ec3</BoundTo>
+      <DependentUpon>TabSwipeToDeletCustomer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>557347b7-a66b-4415-85e1-2d8c023a0120</id>
+    </Compile>
+    <Compile Include="TC\TabClusterInstantRunSP.cs">
+      <BoundTo>67c113d7-0c44-4f4b-b642-d43bc60ca551</BoundTo>
+      <DependentUpon>TabClusterInstantRunSP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e1300083-f02c-4532-a7d8-59d73088d24e</id>
+    </Compile>
+    <Compile Include="TC\TabClusterInstantRunSP.UserCode.cs">
+      <BoundTo>67c113d7-0c44-4f4b-b642-d43bc60ca551</BoundTo>
+      <DependentUpon>TabClusterInstantRunSP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>622b2c43-a210-47ef-bd01-17e6ebb8a99b</id>
+    </Compile>
+    <Compile Include="TC\WithAudiogramRunP.cs">
+      <BoundTo>c54f472b-3867-465c-bb61-e6f7e9317cf7</BoundTo>
+      <DependentUpon>WithAudiogramRunP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03e64797-9295-4d3c-b187-a60ed7b2f103</id>
+    </Compile>
+    <Compile Include="TC\WithAudiogramRunP.UserCode.cs">
+      <BoundTo>c54f472b-3867-465c-bb61-e6f7e9317cf7</BoundTo>
+      <DependentUpon>WithAudiogramRunP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9cb0d97c-f64b-4702-8982-a5a196ed7fc7</id>
+    </Compile>
+    <Compile Include="TC\WithAudiogramRunSP.cs">
+      <BoundTo>fb215f2c-c6e7-45e8-a57f-8206eb0597fc</BoundTo>
+      <DependentUpon>WithAudiogramRunSP.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6c062120-b107-4f3d-8ba0-efc19cdd27cc</id>
+    </Compile>
+    <Compile Include="TC\WithAudiogramRunSP.UserCode.cs">
+      <BoundTo>fb215f2c-c6e7-45e8-a57f-8206eb0597fc</BoundTo>
+      <DependentUpon>WithAudiogramRunSP.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7e17676f-97ef-4914-a566-095ca8586af9</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>eac41c42-8a76-4476-94d3-9613d615f835</id>
+    </None>
+    <None Include="STSAndBasicRepository.rximg">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <DependentUpon>STSAndBasicRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>8687cdb2-862d-4344-90f3-8c6971d1bbbb</id>
+    </None>
+    <None Include="STSAndBasicRepository.rxrep">
+      <id>1b81727f-2307-4c6e-8d84-04f5f165adf8</id>
+      <repoid>2eea9c9d-b236-4284-ada4-debc9c7a2f08</repoid>
+      <reporootid>be2fa462-7d5d-4acb-97d9-44e086031045</reporootid>
+    </None>
+    <None Include="TC\AppInfo.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>fb202265-7a21-4d02-a581-a45775c60e19</id>
+      <recordtableid>5604ab5c-6cfd-4fc4-9e44-64ac27efb435</recordtableid>
+    </None>
+    <None Include="TC\AppInfoSupportMail.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>d72b9c8a-1260-49a6-8911-6d7b562e20fb</id>
+      <recordtableid>bcf472be-662f-488a-b25f-304b36ca5f61</recordtableid>
+    </None>
+    <None Include="TC\AppVersion.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>043d8dfe-0670-4c38-bdfb-c6c7485179f0</id>
+      <recordtableid>f70b4dca-c16c-47e8-a3e5-1f2cb2f2bd56</recordtableid>
+    </None>
+    <None Include="TC\BetterEarSide.rxrec">
+      <id>8ec8adee-a432-451c-b398-a274425c8db2</id>
+      <recordtableid>55e63ae0-24dc-4c7c-bd68-33bbc72337f0</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\BinauralFlowRecommendationGiven.rxrec">
+      <id>7da6326f-4085-4786-bc15-ffd7106d0604</id>
+      <recordtableid>4e5fe826-922e-472c-a62d-89611f61fc0e</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\BinauralFlowRecommendationNotGiven.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>9edff884-60e3-4bd9-84d5-b51847c365db</id>
+      <recordtableid>5298e770-fed0-4104-8885-6f39fb9ba5a6</recordtableid>
+    </None>
+    <None Include="TC\ClusterInstantRunP.rxrec">
+      <id>3fb7a9ac-0824-4c89-8e25-0af0b4622be7</id>
+      <recordtableid>49e821f3-ed2d-4e65-8952-8a64874fed69</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\ClusterInstantRunSP.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>b0083be1-291d-41ec-8efc-51f051f4deb4</id>
+      <recordtableid>fa6b3c1e-87e3-47f1-ac82-4c826b97dff2</recordtableid>
+    </None>
+    <None Include="TC\CodeValidation.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>001a320a-58af-4f4a-9d37-5a18e45bba0a</id>
+      <recordtableid>0065cfc9-3824-48c0-b0cd-8b7dc6a50a0e</recordtableid>
+    </None>
+    <None Include="TC\ConnexxBrandSelection.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>0c9407e3-7454-4dfd-8e34-6e040355cf3d</id>
+      <recordtableid>19371811-ec98-4765-b1a8-3f833a283576</recordtableid>
+    </None>
+    <None Include="TC\ContinueWorkflow.rxrec">
+      <id>5b3dd7b1-bfd1-4ba0-976e-a3daf8c3019c</id>
+      <recordtableid>439a3ead-7863-4841-b842-97bdef1589a2</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\DeletingAudiogramPoints.rxrec">
+      <id>b21f0597-5281-4dc2-a3cf-ac11c0db0aff</id>
+      <recordtableid>8786906b-1cf9-4da2-9d4d-827767939572</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\DeletingCompleteAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>9925ceac-8076-4980-9ca3-55c29e163874</id>
+      <recordtableid>00507c5a-d06a-4fcd-9236-def60bba4f97</recordtableid>
+    </None>
+    <None Include="TC\DeletingCustomer.rxrec">
+      <id>04ec0cb8-4b36-4df0-b1d7-8492951cf2bd</id>
+      <recordtableid>63f53679-b8ad-4dc8-b7ea-f07cc3c12ed8</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\DiscardCouplingSelection.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>9f1e47be-90eb-4a83-b3f9-9973c65eb53e</id>
+      <recordtableid>d157901a-3133-4323-a899-8540c476e1b5</recordtableid>
+    </None>
+    <None Include="TC\DuplicateCustomer.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>ecdeaa05-9eb5-469e-99fc-4af8d87e0c8c</id>
+      <recordtableid>60918b70-34aa-4152-bd31-01d4fb0adaff</recordtableid>
+    </None>
+    <None Include="TC\EditingAudiogram.rxrec">
+      <id>445bb066-22bb-4629-901e-956b5ed8a818</id>
+      <recordtableid>35c6463e-e426-4938-b091-d57d991c7990</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\EditingExistingCustomer.rxrec">
+      <id>7924e195-f625-4e03-81b9-732bf91a5fed</id>
+      <recordtableid>9363f5a4-28bc-4281-992e-65e6501f881a</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\EnablingDisabling.rxrec">
+      <id>27e853ee-1043-456a-92ea-8a583970558f</id>
+      <recordtableid>31aace5e-5fb6-4231-befd-049b531540e9</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\EnterAudiogramCancel.rxrec">
+      <id>3a9786f7-9476-4bf2-a6af-0b733cd1defc</id>
+      <recordtableid>9d360074-4f93-41ec-83b6-f3c8028a67c7</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\EnterAudiogramSave.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>fee25cb7-65c3-449c-a248-4ed225adbc74</id>
+      <recordtableid>219a86f1-ef03-4de7-b837-2a4d38aa0962</recordtableid>
+    </None>
+    <None Include="TC\EnterValidationCodeDone.rxrec">
+      <id>99e166cf-6714-4b9f-ae2e-f00d75aa7bd5</id>
+      <recordtableid>e6c9ba89-1733-4375-8e8d-f1fe6fa222db</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\FAQ.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>60fbeddd-e406-4085-aacf-31c1a5e6803c</id>
+      <recordtableid>57c3635b-d6f2-436a-9a0b-31a9a2a2aab2</recordtableid>
+    </None>
+    <None Include="TC\FirstTimeLaunch.rxrec">
+      <id>d0f90ef1-8dd8-4553-8112-dcf2819a6d37</id>
+      <recordtableid>d4467035-47fa-4742-84c7-a19b88ef268c</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\HighCluster.rxrec">
+      <id>343b307b-90d4-478d-9ee9-4c1c574e2a59</id>
+      <recordtableid>6ac1e53f-cc5b-4841-bc0b-64291ea7e9e0</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\Imprint.rxrec">
+      <id>ddc8d0ec-d2f8-480f-959c-e9a1fd34c75f</id>
+      <recordtableid>b1c6c266-5482-4b37-ae85-b7ae451dbe98</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\InsufficientAudiEntry.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>6934eb18-6c29-4914-96b8-29f462341ba2</id>
+      <recordtableid>d4909c08-e593-40ef-83fe-5651fe0b37f9</recordtableid>
+    </None>
+    <None Include="TC\InterfaceLanguages.rxrec">
+      <id>f6cbf91f-392d-45d8-9b2c-f07fc709b9a9</id>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <recordtableid>505f5cc7-78e2-4001-81a8-27033e2af4c7</recordtableid>
+    </None>
+    <None Include="TC\MedicalInfo.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>85c4de9e-2ec1-4dc4-a95b-4e7d596b870e</id>
+      <recordtableid>68875e80-9837-4a2e-954e-a0bda82cd9b2</recordtableid>
+    </None>
+    <None Include="TC\MonauralFlowRecommendationGiven.rxrec">
+      <id>20161c6e-63f3-4b25-ac61-a0f12d5a7921</id>
+      <recordtableid>f6906616-05cd-40d8-9195-90ed05e457d2</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\MonauralFlowRecommendationNotGiven.rxrec">
+      <id>2bc0a087-85ed-4079-a8cd-aa90bd947bae</id>
+      <recordtableid>d425ee3f-1a00-4275-8222-67d6af886bd0</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\NewCustomerWithAudiogram.rxrec">
+      <id>647032c2-6937-4329-bd3e-b4376f0a047d</id>
+      <recordtableid>3e482429-b5d5-4b97-af59-fe82478ae0f8</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\NewCustomerWithoutAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>f8b6aaa4-3dff-4093-bc55-1e3f3ad29a4f</id>
+      <recordtableid>42c23c96-8bdb-4560-b74f-6889e8fd643c</recordtableid>
+    </None>
+    <None Include="TC\OverRidingRecommendationHIAndCluster.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>5d0ecd92-1159-4cc3-bf36-dbb3d9f60c73</id>
+      <recordtableid>88f63897-e9dc-4084-920e-35bd8bfe014a</recordtableid>
+    </None>
+    <None Include="TC\PasscodeTest.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>734ebc2d-9656-45d1-a3fb-05f60440f5c3</id>
+      <recordtableid>a2fe4e9e-83eb-491d-bfb9-9cc17d0bb28f</recordtableid>
+    </None>
+    <None Include="TC\PreFilledRecommendation.rxrec">
+      <id>116a2df5-5c3a-4fa6-91ff-9554770b991b</id>
+      <recordtableid>bfbd4973-3e9f-468a-94ea-aeee70127925</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\RecommendationForDeviceSelection.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>40692027-6b54-4603-814e-932064b7866e</id>
+      <recordtableid>2f502437-8fbc-48dc-b4ad-87b9900db530</recordtableid>
+    </None>
+    <None Include="TC\RecommendationOfHIsWithAudiogram.rxrec">
+      <id>9f385330-11c8-4655-b86c-246146e0820d</id>
+      <recordtableid>f967f008-3f90-4397-bfe3-936ee142097e</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\RecommendationOfHIsWithoutAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>c76e7ff6-ab4c-44f2-b27a-39f70447d8fd</id>
+      <recordtableid>6a2b939e-1bcd-4b67-b01b-dadd27ccdbac</recordtableid>
+    </None>
+    <None Include="TC\TabBetterEarSide.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>c0a45a59-164e-4b3a-87b8-ba8999b28916</id>
+      <recordtableid>6ed0e951-2ac5-463c-96de-901a88b75984</recordtableid>
+    </None>
+    <None Include="TC\TabClusterInstantRunP.rxrec">
+      <id>306846d3-f04b-4e3e-a78a-5423e4f06ca0</id>
+      <recordtableid>8d933f2e-b041-4b58-b738-64f1d5af6d67</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabCodeValidation.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>3a4991cd-d52e-4e75-aefd-1bc17e39ea68</id>
+      <recordtableid>158c4b67-f0ca-4812-be69-e9ddbee84364</recordtableid>
+    </None>
+    <None Include="TC\TabDeletingAudiogramPoints.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>1a71e456-f090-4075-813f-f5d93603da0a</id>
+      <recordtableid>6f96a53b-f2da-4d2a-ab89-9dab4ccc5884</recordtableid>
+    </None>
+    <None Include="TC\TabDeletingCompleteAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>019bc22f-a36f-4cc7-9cd4-72bf5f93db15</id>
+      <recordtableid>02021cc7-a8e8-4a58-857e-64d7a302bb51</recordtableid>
+    </None>
+    <None Include="TC\TabDiscardCouplingSelection.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>de1f0606-88b8-4bb5-8a0e-abdc39fd09be</id>
+      <recordtableid>d7a461c9-5c03-476c-8bbb-6133391c6f30</recordtableid>
+    </None>
+    <None Include="TC\TabEditingAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>123a9b21-f52d-4568-9e07-5b08d908e484</id>
+      <recordtableid>9df83eb5-74aa-4d69-950c-f921357509bc</recordtableid>
+    </None>
+    <None Include="TC\TabEnterAudiogramSave.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>05fa3870-fb01-45fc-b0b1-edd65ebdf0c2</id>
+      <recordtableid>24209285-0cf6-4913-a55d-4189ca33c3dc</recordtableid>
+    </None>
+    <None Include="TC\TabEnterValidationCodeDone.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>014e5d09-be4f-475c-a18a-368e4dfd9541</id>
+      <recordtableid>adbc064a-28db-40a3-ba49-2d75e3f1fef0</recordtableid>
+    </None>
+    <None Include="TC\TabHighCluster.rxrec">
+      <id>be67b7db-13cd-4758-bfbc-5dbc532253e6</id>
+      <recordtableid>d25f87ce-e113-4a43-b9d0-4afe24374d54</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabMonauralFlowRecommendationGiven.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>4365a1c9-4fa1-4548-ba15-e2b6a1e42ecf</id>
+      <recordtableid>665d44a1-a3c5-493c-947e-5282b936dd62</recordtableid>
+    </None>
+    <None Include="TC\TabMonauralFlowRecommendationNotGiven.rxrec">
+      <id>c6f2bba6-2b5e-47c0-982f-92487ccf519f</id>
+      <recordtableid>18c0041e-77dc-4952-a3ff-2c3d09116f58</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabOverRidingRecommendationHIAndCluster.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>acb2fbe5-0d8d-4e95-af2d-a4eccd74172c</id>
+      <recordtableid>d1eb918c-2bf2-4e60-8733-b4b2ea697aae</recordtableid>
+    </None>
+    <None Include="TC\TabPreFilledRecommendation.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>abf3fd1c-6458-4d61-b1f0-7b9fcc18ff6c</id>
+      <recordtableid>084becf6-d3e7-4c81-94fc-ac016c4719fb</recordtableid>
+    </None>
+    <None Include="TC\TabRecommendationForDeviceSelection.rxrec">
+      <id>775c3fff-0611-4618-ad50-b3f00dd68616</id>
+      <recordtableid>61718bac-183c-4388-88df-6e30d809f16b</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabStartUpEntryScreen.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>ad45acab-960a-4d83-9914-16e1c0e90ada</id>
+      <recordtableid>fa2b2eb1-4738-45b5-abcf-adf4cb7e388c</recordtableid>
+    </None>
+    <None Include="TC\TabNewCustomerWithAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>15c1137c-851c-491f-94f4-a5753d2e120b</id>
+      <recordtableid>192ef099-87b5-4b85-b472-1c15a2dd35f5</recordtableid>
+    </None>
+    <None Include="TC\TabAppInfo.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>7dfe1a20-f3b6-4542-90eb-56288f17e389</id>
+      <recordtableid>070817ff-d03b-48bc-a0ec-495f090f1fe1</recordtableid>
+    </None>
+    <None Include="TC\TabAppVersion.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>7d3b9650-e2ac-4f77-977a-82d17475a24b</id>
+      <recordtableid>22c84203-d5a9-48ff-b74c-e45c59f380cb</recordtableid>
+    </None>
+    <None Include="TC\TabFAQ.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>f32f5a8f-fce0-4061-8404-9327c20d62b7</id>
+      <recordtableid>c775a010-d382-4b61-9472-74c67fc70390</recordtableid>
+    </None>
+    <None Include="TC\TabImprint.rxrec">
+      <id>abcdb5a9-0310-4857-8166-35d7d234642c</id>
+      <recordtableid>fa145368-29b1-4726-81b9-47cbf314e254</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabMedicalInfo.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>058549a1-e5d6-4847-ba50-63b67290bb0b</id>
+      <recordtableid>3f8e2af7-6267-45fe-9f37-3201af9d2f6d</recordtableid>
+    </None>
+    <None Include="TC\TabNewCustomerWithoutAudiogram.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>363656a6-68e3-4707-8591-029318118cfb</id>
+      <recordtableid>38d1d508-0dbb-4ee1-9a70-e31c6bd35cf2</recordtableid>
+    </None>
+    <None Include="TC\TabStartTheAppAfterInitialSetupDone.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>aab2f1c7-8c15-42be-9400-c1a91d8f64cc</id>
+      <recordtableid>942d66b9-a853-4ea8-8285-d1b7c3b77d9e</recordtableid>
+    </None>
+    <None Include="TC\TabFirstTimeLaunch.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>d4342d58-ed9f-4136-8094-38ae1eae5148</id>
+      <recordtableid>a71d109c-0c48-4577-8388-736119ac515c</recordtableid>
+    </None>
+    <None Include="TC\TabEnablingDisabling.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>99a90840-18e2-4fc6-94d4-790c80fb1567</id>
+      <recordtableid>bad109c3-26a3-43a2-8096-12e40910da08</recordtableid>
+    </None>
+    <None Include="TC\StartTheAppAfterInitialSetupDone.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>53987bc6-8a5b-49b8-bb16-dcf4dfed04ad</id>
+      <recordtableid>776cd93f-d3dc-433e-8555-77391b44372c</recordtableid>
+    </None>
+    <None Include="TC\StartUpEntryScreen.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>caec9b2f-dff0-46d8-bdcd-f068a9f9e3b9</id>
+      <recordtableid>0bc9114f-c19f-4185-80e8-fc47840f334e</recordtableid>
+    </None>
+    <None Include="TC\SwipeToDeleteCustomer.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>bb2bb089-96f0-4400-b062-c9b1827841ad</id>
+      <recordtableid>7a00cf2f-95e9-44d1-805d-401f6ae25c07</recordtableid>
+    </None>
+    <None Include="TC\TabContinueWorkFlow.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>26d3a13b-4172-41d7-b3d3-90934961f426</id>
+      <recordtableid>24c15259-5900-44ec-a66e-0f890b7419d8</recordtableid>
+    </None>
+    <None Include="TC\TabDeletingCustomer.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>64469299-7fc4-45d4-aa3b-332379c2ad18</id>
+      <recordtableid>103dfca1-60ce-4e7a-a32a-aa25f3141fec</recordtableid>
+    </None>
+    <None Include="TC\TabDuplicateCustomers.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>8b88c07b-8e67-43d6-a935-479aacbaaa74</id>
+      <recordtableid>9280eeb1-4537-4c88-ab6b-55c194ab04d8</recordtableid>
+    </None>
+    <None Include="TC\TabEditingExistingCustomer.rxrec">
+      <id>883bbb9f-d73f-46f4-ad85-6f8b307454ce</id>
+      <recordtableid>e92aabed-0c61-40a7-95c9-8dcdb415d909</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabEnterAudiogramCancel.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>e077e44c-3242-4c7e-b113-56bb67de310a</id>
+      <recordtableid>bdc31ed9-d024-4444-90a2-357b4e89070c</recordtableid>
+    </None>
+    <None Include="TC\TabInsufficientAudiEntry.rxrec">
+      <id>74eb56b2-fc73-45ff-bd66-6558e722adc7</id>
+      <recordtableid>6c763dd1-824c-4b3c-953e-a07ce224e444</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabRecommendationOfHIsWithAudiogram.rxrec">
+      <id>0ccee61c-0afd-45c2-9de6-5078b26d8c87</id>
+      <recordtableid>7cb4755b-ca7a-4a92-a1da-33632aa6b11a</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\TabSwipeToDeletCustomer.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>7c1f2e64-a777-42c9-960e-9e982ec88ec3</id>
+      <recordtableid>5c2d1971-2236-49d9-803d-1e5e03c2518d</recordtableid>
+    </None>
+    <None Include="TC\TabClusterInstantRunSP.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>67c113d7-0c44-4f4b-b642-d43bc60ca551</id>
+      <recordtableid>f8dcdb89-5ea0-4dff-9b4d-1386acac605a</recordtableid>
+    </None>
+    <None Include="TC\WithAudiogramRunP.rxrec">
+      <id>c54f472b-3867-465c-bb61-e6f7e9317cf7</id>
+      <recordtableid>14b26b66-ee5a-46ab-8a59-9178ffb446d4</recordtableid>
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+    </None>
+    <None Include="TC\WithAudiogramRunSP.rxrec">
+      <BoundTo>1b81727f-2307-4c6e-8d84-04f5f165adf8</BoundTo>
+      <id>fb215f2c-c6e7-45e8-a57f-8206eb0597fc</id>
+      <recordtableid>d16c4b8e-1113-4a14-8770-237c8b9a6110</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="STSAndBasic.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>48052abf-34c9-409a-9efa-ef0c54761a88</id>
+    </Content>
+    <Content Include="STSAndBasic.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>7c111d7c-1665-4cf3-a633-f0a710047a6e</id>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLayer\AppLayer.csproj">
+      <Project>{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}</Project>
+      <Name>AppLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

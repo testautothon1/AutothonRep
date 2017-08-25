@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+rxversion="6.2"
+id="1a4c7a34-5b36-4b25-8571-020627790ed9"
+embeddedrepository="False"
+mode="Global">
+	<name>
+		MFFlowLanguage
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MFFlowLanguage"
+	namespace="STSiOSTouchControl.TC"/>
+	<variables/>
+	<recorditems/>
+	<repository
+	name="STSiOSTouchControlRepository"
+	id="3b7ccdb2-a3af-418f-8385-46ea623c2d1d"
+	rxversion="6.2"
+	relativepath="..\STSiOSTouchControlRepository.rxrep">
+		<codegen
+		classname="STSiOSTouchControlRepository"
+		namespace="STSiOSTouchControl"/>
+		<rootfolder
+		name="_rootdummy_"
+		id="20d2592f-8ce7-455f-aa9d-0da08624a655"/>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MFFlowLanguage.UserCode.cs
+	</usercodefile>
+	<references/>
+</recordtable>

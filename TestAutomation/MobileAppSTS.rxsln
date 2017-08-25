@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 6.2
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLayer", "AppLayer\AppLayer.csproj", "{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STSAndBasic", "STSAndBasic\STSAndBasic.csproj", "{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogCapturer", "LogCapturer\LogCapturer.csproj", "{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STSiOSMFApp", "STSiOSMFApp\STSiOSMFApp.csproj", "{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STSAndTouchControl", "STSAndTouchControl\STSAndTouchControl.csproj", "{11E53950-0261-4F22-ABB8-318704BEAA23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STSmyHearing", "STSmyHearing\STSmyHearing.csproj", "{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{286C9926-CE6D-45A9-AD30-99575B5E5493}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}.Debug|x86.Build.0 = Debug|x86
+		{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}.Debug|x86.ActiveCfg = Debug|x86
+		{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}.Release|x86.Build.0 = Release|x86
+		{FE502DB7-361A-44DD-92C6-26BBC5CE5C48}.Release|x86.ActiveCfg = Release|x86
+		{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}.Debug|x86.Build.0 = Debug|x86
+		{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}.Debug|x86.ActiveCfg = Debug|x86
+		{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}.Release|x86.Build.0 = Release|x86
+		{3C987BFD-F044-4DEF-93F4-D26E57D7BCEF}.Release|x86.ActiveCfg = Release|x86
+		{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}.Debug|x86.Build.0 = Debug|x86
+		{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}.Debug|x86.ActiveCfg = Debug|x86
+		{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}.Release|x86.Build.0 = Release|x86
+		{4FA45FB4-1B9B-4D5D-A2DF-A8169E6EA43D}.Release|x86.ActiveCfg = Release|x86
+		{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}.Debug|x86.Build.0 = Debug|x86
+		{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}.Debug|x86.ActiveCfg = Debug|x86
+		{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}.Release|x86.Build.0 = Release|x86
+		{9CB02D38-51D3-4B4D-B1BB-6EDE234FC6B8}.Release|x86.ActiveCfg = Release|x86
+		{11E53950-0261-4F22-ABB8-318704BEAA23}.Debug|x86.Build.0 = Debug|x86
+		{11E53950-0261-4F22-ABB8-318704BEAA23}.Debug|x86.ActiveCfg = Debug|x86
+		{11E53950-0261-4F22-ABB8-318704BEAA23}.Release|x86.Build.0 = Release|x86
+		{11E53950-0261-4F22-ABB8-318704BEAA23}.Release|x86.ActiveCfg = Release|x86
+		{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}.Debug|x86.Build.0 = Debug|x86
+		{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}.Debug|x86.ActiveCfg = Debug|x86
+		{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}.Release|x86.Build.0 = Release|x86
+		{42F83C0A-E5F6-4F17-8376-B01DDF105EC7}.Release|x86.ActiveCfg = Release|x86
+		{286C9926-CE6D-45A9-AD30-99575B5E5493}.Debug|x86.Build.0 = Debug|x86
+		{286C9926-CE6D-45A9-AD30-99575B5E5493}.Debug|x86.ActiveCfg = Debug|x86
+		{286C9926-CE6D-45A9-AD30-99575B5E5493}.Release|x86.Build.0 = Release|x86
+		{286C9926-CE6D-45A9-AD30-99575B5E5493}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="STSiOSMFApp"
+      id="88740dda-b5e5-4a63-9fb6-f39c4c264968"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="STSiOSMFApp"
+      id="88740dda-b5e5-4a63-9fb6-f39c4c264968"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

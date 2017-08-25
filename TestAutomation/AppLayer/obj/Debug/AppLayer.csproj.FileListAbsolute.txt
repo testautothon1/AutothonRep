@@ -1,0 +1,80 @@
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.rxtmg
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.pdb
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Castle.Core.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\LogCapturer.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Core.WinApi.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Core.Injector.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Libs.WinForms.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\LogCapturer.pdb
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.xml
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Castle.Core.xml
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.xml
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.xml
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.dll
+C:\Users\z002xfce\Desktop\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.pdb
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.rxtmg
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\AppLayer.pdb
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Castle.Core.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\LogCapturer.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Core.WinApi.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Core.Injector.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Ranorex.Libs.WinForms.dll
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\LogCapturer.pdb
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.xml
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Castle.Core.xml
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.xml
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.xml
+C:\New folder (2)\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.xml
+C:\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+C:\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.dll
+C:\New folder (2)\TestAutomation\AppLayer\obj\Debug\AppLayer.pdb
+C:\Framework\TestAutomation\AppLayer\bin\Debug\AppLayer.rxtmg
+C:\Framework\TestAutomation\AppLayer\bin\Debug\AppiumService\KeywordImplementation.cs
+C:\Framework\TestAutomation\AppLayer\bin\Debug\AppLayer.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\AppLayer.pdb
+C:\Framework\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\Castle.Core.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\LogCapturer.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\WebDriver.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.dll
+C:\Framework\TestAutomation\AppLayer\bin\Debug\LogCapturer.pdb
+C:\Framework\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.xml
+C:\Framework\TestAutomation\AppLayer\bin\Debug\Castle.Core.xml
+C:\Framework\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Framework\TestAutomation\AppLayer\bin\Debug\WebDriver.xml
+C:\Framework\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.xml
+C:\Framework\TestAutomation\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+C:\Framework\TestAutomation\AppLayer\obj\Debug\AppLayer.dll
+C:\Framework\TestAutomation\AppLayer\obj\Debug\AppLayer.pdb
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\AppLayer.rxtmg
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\AppiumService\KeywordImplementation.cs
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\AppLayer.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\AppLayer.pdb
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\Castle.Core.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\LogCapturer.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\WebDriver.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.dll
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\LogCapturer.pdb
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\appium-dotnet-driver.xml
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\Castle.Core.xml
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\Newtonsoft.Json.xml
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\WebDriver.xml
+C:\New folder\trunk\TestAutomation\AppLayer\bin\Debug\WebDriver.Support.xml
+C:\New folder\trunk\TestAutomation\AppLayer\obj\Debug\AppLayer.csprojResolveAssemblyReference.cache
+C:\New folder\trunk\TestAutomation\AppLayer\obj\Debug\AppLayer.dll
+C:\New folder\trunk\TestAutomation\AppLayer\obj\Debug\AppLayer.pdb
